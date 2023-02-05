@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Given the company, define the basic branding ideas.These should include:
+       
+        What does the company do, or offer?
+        -It's a coffee roaster company selling roasted coffee beans online, it also offers some useful tools and knowledge to coffee lovers.  
+        Who is the company to potential customers? (as a person)
+        - both new and experienced coffee enjoyers
+        Why might this company entice someone to purchase a product or service
+        - this website should evoke a sense of community, where fresh raosted coffee is almost always desired.  
+        3. From your branding ideas, assemble brand components including:
+
+        Fonts : Sometimes Times + Roobert
+        Colour palettes : white, Black, vibrant + colorful
+        Potential imagery, and, or, art direction"
+        - https://www.google.com/search?rlz=1C1ONGR_zh-CNCA1040CA1040&q=black+and+white+coffee&tbm=isch&sa=X&ved=2ahUKEwj_77n-tNT8AhXoFjQIHZaBB5YQ0pQJegQICRAB&biw=911&bih=842&dpr=1.25#imgrc=pxMM1ZL8C-Qz3M
+       
+       
+-->
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tim Chen P01</title>
+
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="html/checkout.html" />
+        <link href="html/product_listing.html" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Mono One" />
+
+        <!--resource used: https://developers.google.com/fonts/docs/getting_started-->
+    </head>
+
+    <body class="fontstyle-default">
+        <header>
+            <h1 class="fontstyle-special companyheader">TC Coffee</h1>
+
+            <nav>
+                <a class="navlink" href="product_listing.html">Product Listing Template</a>
+                <a class="navlink" href="checkout.html">Checkout Template</a>
+                <a class="navlink" href="index.html">Style Guide</a>
+                <a class="navlink" href="#interactive_elements">Interactive Elements</a>
+                <a class="navlink" href="#text_elements">Text Elements</a>
+                <a class="navlink" href="#combined_elements">Combined Elements</a>
+                <a class="navlink" href="#citations">Citations</a>
+            </nav>
+            <!--
+   Linking html pages
+   https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites-->
+        </header>
+
+        <section id="branding_info">
+            <h2 class="fontstyle-special">Branding Informaiton</h2>
+            <h3>What does the company do, or offer?</h3>
+            <p>It's a coffee roaster company selling roasted coffee beans online, it also offers some useful tools and knowledge to coffee lovers.</p>
+            <h3>Who are the potential customers?</h3>
+            <p>Both new and experienced coffee enjoyers,</p>
+            <h3>Why might this company entice someone to purchase a product or service</h3>
+            <p>This website is build for coffee community, where fresh roasted coffee is almost always desired.</p>
+            <h3>3. From your branding ideas, assemble brand components including:</h3>
+            <h4>Fonts:</h4>
+            <p class="fontstyle-default fordisplay">Oxygen</p>
+            <p class="description">Used for all non header text.</p>
+
+            <p class="fontstyle-special fordisplay">Rubik Mono One</p>
+            <p class="description">Used for Product titles, Article titles, Site titles, and section titles</p>
+            <p></p>
+            <h4>Colour palettes :</h4>
+            <div class="color-palette">
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="red"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+                <div class="yellow"></div>
+                <!--       resource     https://www.w3schools.com/css/css3_flexbox.asp-->
+            </div>
+            <h4>Potential imagery, and, or, art direction</h4>
+
+            <img class="displayimage" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b5c66948978169.58a746e370619.jpg" />
+            <img class="displayimage" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" />
+        </section>
+
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+            <h2 class="fontstyle-special">Interactive Elements</h2>
+
+            <section class="element">
+                <h3>In-text link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.intextlink-default</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#!"&gt;Default in-text link&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <p>This is a <a href="#interactive_elements">Default in-text link</a></p>
+            </section>
+            <section class="element">
+                <h3>Navigation Link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.navlink</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="navlink"&gt;Default Navigation Link&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <a class="navlink" href="#!">Default navigation link</a>
+            </section>
+
+            <!-- Default Button styling section -->
+            <section class="element">
+                <h3>Button</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;input class ="button-default" type="button" value="Button Default"&gt;</code>
+
+                <h4>Rendered element:</h4>
+
+                <!-- <a class="button-nav" href="#">Default Button</a>-->
+                <input class="button-default" type="button" value="Button Default" />
+
+                <!-- resource: https://www.w3schools.com/tags/att_button_type.asp-->
+            </section>
+
+            <section class="element">
+                <h3>Submit/Reset Buttons</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.submitbutton-default</p>
+                <p>.resetbutton-default</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;input class = "resetbutton" type="reset" value="Reset"&gt;</code><br />
+                <code>&lt;input class = "submitbutton" type="submit" value="Submit"&gt;</code>
+
+                <h4>Rendered element:</h4>
+
+                <input class="resetbutton" type="reset" value="Reset" />
+
+                <input class="submitbutton" type="submit" value="Submit" />
+            </section>
+
+            <section class="element">
+                <h3>Text Input Field with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>.textfield</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;label for="textfield"&gt;Input field example:&lt;/label&gt;</code><br />
+                <code> &lt;input class = "inputfield-default" type="text" id="textfield" name="textfield" placeholder="placeholder text"&gt;</code>
+
+                <h4>Rendered element:</h4>
+
+                <label for="textfield">Input field example:</label>
+
+                <input class="inputfield-default" type="text" id="textfield" name="textfield" placeholder="placeholder text" />
+
+                <!--
+                    learned from https://www.w3schools.com/tags/tag_input.asp, placholder from https://www.w3schools.com/tags/att_input_placeholder.asp
+                -->
+            </section>
+
+            <section class="element">
+                <h3>Radio Button with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>.radiobutton-default</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;input type="radio" id="radiob1" name="radiobutton"&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <label for="radiob1">Radio Button example 1:</label>
+                <input type="radio" id="radiob1" name="radiobutton" />
+            </section>
+
+            <section class="element">
+                <h3>Image as a Link</h3>
+                <h4>CSS selector:</h4>
+                <p>.imagelink</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="imagelink"&gt;img src="!"&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <a href="#imagelink" class="imagelink"><img class="imagelink-default" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+
+                <!--
+                    learned from https://www.w3schools.com/tags/tag_input.asp
+                -->
+            </section>
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+            <h2 class="fontstyle-special">Text Elements</h2>
+
+            <section class="element">
+                <h3>Headings</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.h1</p>
+                <h4>Rendered element:</h4>
+                <h1>Heading Level 1</h1>
+                <p>----</p>
+                <h2>Heading Level 2</h2>
+                <h4>CSS selector:</h4>
+                <p>.h2</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;h1&gt;Heading Level 2&lt;h1&gt;</code>
+                <p>----</p>
+                <h4>Rendered element:</h4>
+                <h3>Heading Level 3</h3>
+                <h4>CSS selector:</h4>
+                <p>.h3</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;h1&gt;Heading Level 3&lt;h1&gt;</code>
+                <p>----</p>
+                <h4>Rendered element:</h4>
+                <h4>Heading Level 4</h4>
+                <h4>CSS selector:</h4>
+                <p>.h4</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;h1&gt;Heading Level 4&lt;h1&gt;</code>
+                <p>----</p>
+            </section>
+            <h3>Paragraphs</h3>
+            <section class="element">
+                <h4>CSS selector:</h4>
+                <p>.p</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;p&gt;Paragraph example&lt;p&gt;</code>
+                <h4>Rendered element:</h4>
+                <p class="p-default">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed aliquet erat. Pellentesque placerat maximus blandit. Nulla id leo pharetra sem aliquet facilisis nec ac ante. Quisque enim orci, dapibus vitae
+                    tincidunt vel, tincidunt id lacus. In dignissim purus at velit vehicula, ac tristique nibh interdum. Suspendisse a tempor tortor. Fusce mattis scelerisque magna non suscipit.
+                </p>
+                <!-- https://www.lipsum.com/ lorem ipsum generator -->
+            </section>
+
+            <section class="element">
+                <h3>Numbered Lists</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.ol</p>
+
+                <h4>Sample code:</h4>
+                <code>
+                    &lt;ol class = ol-default&gt;<br />
+                    &lt;li&gt; Item item &lt;/li&gt;<br />
+                    &lt;/ol&gt;
+                </code>
+                <h4>Rendered element:</h4>
+                <ol class="ol-default">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </section>
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+            <h2 class="fontstyle-special">Combined Elements</h2>
+
+            <section class="element">
+                <h3>Main Navigation</h3>
+
+                <a class="navlink" href="#!">Navigation link 1</a>
+                <a class="navlink" href="#!">Navigation link 2</a>
+                <a class="navlink" href="#!">Navigation link 3</a>
+                <a class="navlink" href="#!">Navigation link 4</a>
+            </section>
+
+            <section class="element">
+                <h3>Product/Service Listing</h3>
+
+                <!--old code
+            
+            <h1 class=fontstyle-special> COLOMBIAN COFFEE </h1>
+            <a href="#imagelink" class="imagelink-default"><img class=imagelink-default src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+            <p>product descriptions</p>
+            <p>price info <a class="button-nav" href="#">Add to cart Button</a><br></p>
+
+            <a class="navlink" href="#!">Link to detailed page</a>
+-->
+                <!--updated final-->
+
+                <div class="product-list">
+                    <div class="product-card">
+                        <a href="#imagelink"><img class="imagelink-product" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+
+                        <h4 class="product-title">Holiday Blend</h4>
+                        <p class="product-price">$50</p>
+
+                        <div class="product-overlay">
+                            <p class="product-text">Holiday Special</p>
+                            <p class="product-text">Brown Sugar</p>
+                            <p class="product-text">Star Anise</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="#imagelink"><img class="imagelink-product" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+
+                        <h4 class="product-title">Holiday Blend</h4>
+                        <p class="product-price">$50</p>
+
+                        <div class="product-overlay">
+                            <p class="product-text">Holiday Special</p>
+                            <p class="product-text">Brown Sugar</p>
+                            <p class="product-text">Star Anise</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="#imagelink"><img class="imagelink-product" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+
+                        <h4 class="product-title">Holiday Blend</h4>
+                        <p class="product-price">$50</p>
+
+                        <div class="product-overlay">
+                            <p class="product-text">Holiday Special</p>
+                            <p class="product-text">Brown Sugar</p>
+                            <p class="product-text">Star Anise</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="element">
+                <h3>Product Brief</h3>
+
+                <div class="product-brief">
+                    <div class="product-brief-block">
+                        <a href="#imagelink"><img class="imagelink-productbrief" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+                    </div>
+                    <div class="product-brief-block">
+                        <h4 class="product-brief-title">Holiday Blend</h4>
+                        <p class="product-brief-price">$50</p>
+                    </div>
+
+                    <div class="product-brief-block">
+                        <p class="product-brief-count"><b> - 1 + </b></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="product-brief">
+                    <div class="product-brief-block">
+                        <a href="#imagelink"><img class="imagelink-productbrief" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+                    </div>
+                    <div class="product-brief-block">
+                        <h4 class="product-brief-title">Holiday Blend</h4>
+                        <p class="product-brief-price">$50</p>
+                    </div>
+
+                    <div class="product-brief-block">
+                        <p class="product-brief-count"><b> - 1 + </b></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="product-brief">
+                    <div class="product-brief-block">
+                        <a href="#imagelink"><img class="imagelink-productbrief" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example" /></a>
+                    </div>
+                    <div class="product-brief-block">
+                        <h4 class="product-brief-title">Holiday Blend</h4>
+                        <p class="product-brief-price">$50</p>
+                    </div>
+
+                    <div class="product-brief-block">
+                        <p class="product-brief-count"><b> - 1 + </b></p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="element">
+                <h3>Payment Form</h3>
+                <p>Order info</p>
+                <ol class="ol-default">
+                    <li>
+                        <h4>The Esspresso Blend</h4>
+                        <span> 20.99</span>
+                    </li>
+                    <li>
+                        <h4>The Wakeup Call</h4>
+                        <span> 20.99</span>
+                    </li>
+                    <li>
+                        <h4>Single origin Kenya</h4>
+                        <span> 23.99</span>
+                    </li>
+                </ol>
+                <p>Total price: 64.96$</p>
+                <label for="textfield"> Deliver address:</label>
+                <input class="inputfield-default" type="text" id="textfield" name="textfield" placeholder="xxx xth Ave" /><br />
+                <a class="button-nav" href="#!"> Submit Button</a>
+                <a class="button-nav" href="#">Open 3rd party payment option (Paypal) Button</a><br />
+            </section>
+
+            <section class="element">
+                <h3>Checkout Cart</h3>
+                <ol class="ol-default">
+                    <li>
+                        <h4>The Esspresso Blend</h4>
+                        <span> 20.99</span>
+                    </li>
+                    <li>
+                        <h4>The Wakeup Call</h4>
+                        <span> 20.99</span>
+                    </li>
+                    <li>
+                        <h4>Single origin Kenya</h4>
+                        <span> 23.99</span>
+                    </li>
+                </ol>
+
+                <p>
+                    $64.96 <br />
+                    <a class="button-nav" href="#">order Button</a>
+                </p>
+            </section>
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <section id="citations">
+            <h2>Citations</h2>
+
+            <ul>
+                <li>Used resources:</li>
+
+<!--
+                <li>https://www.google.com/search?rlz=1C1ONGR_zh-CNCA1040CA1040&q=black+and+white+coffee&tbm=isch&sa=X&ved=2ahUKEwj_77n-tNT8AhXoFjQIHZaBB5YQ0pQJegQICRAB&biw=911&bih=842&dpr=1.25#imgrc=pxMM1ZL8C-Qz3M</li>
+
+                <li>https://developers.google.com/fonts/docs/getting_started</li>
+-->
+
+                <li>https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites https://www.w3schools.com/css/css3_flexbox.asp</li>
+
+                <li>https://www.w3schools.com/css/css3_flexbox.asp</li>
+
+                <li>https://www.w3schools.com/tags/att_button_type.asp</li>
+
+                <li>https://www.w3schools.com/tags/tag_input.asp</li>
+                <li>https://www.w3schools.com/tags/att_input_placeholder.asp</li>
+
+                <li>https://www.w3schools.com/tags/tag_input.asp</li>
+
+                <li>https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg</li>
+
+                <li>https://fonts.googleapis.com/css?family=“Oxygen”</li>
+
+                <li>https://fonts.googleapis.com/css?family=“Rubik Mono One”</li>
+
+                <li>https://www.w3schools.com/tags/att_input_type_checkbox.asp</li>
+
+                <li>https://www.w3schools.com/html/html_form_input_types.asp</li>
+
+                <li>https://www.designandpaper.com/40-contemporary-and-cool-coffee-packaging-designs/</li>
+            </ul>
+        </section>
+    </body>
+</html>

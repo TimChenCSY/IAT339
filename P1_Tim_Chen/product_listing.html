@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tim Chen P01 </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="index.html">
+    <link href="product_listing.html">
+    <link href="checkout.html">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Mono One">
+
+</head>
+
+<header class=fontstyle-default>
+    <h1 class="fontstyle-special companyheader">TC Coffee</h1>
+
+    <nav>
+        <a class=navlink href="product_listing.html">Product Listing Template</a>
+        <a class=navlink href="checkout.html">Checkout Template</a>
+        <a class=navlink href="index.html">Style Guide</a>
+
+    </nav>
+
+
+</header>
+
+<body class=fontstyle-default>
+
+    <h2 class="fontstyle-special fordisplay">Shop Our Coffee</h2>
+    <p>Our finest selection of single origin, ethically sourced, sustainable coffee beans. </p>
+    <p> </p>
+    <p>Roasted in Vancouver, Shipping in 2 business day, Free shipping on orders over $35. </p>
+
+   
+<!--   https://www.w3schools.com/tags/att_input_type_checkbox.asp-->
+<!--   https://www.w3schools.com/html/html_form_input_types.asp-->
+    <div id=shop-filter-section>
+        <form>
+            <h4>Sort:</h4>
+
+            <label for="price">Price</label>
+            <input type="radio" id="price" name="sortbuttons">
+            <label for="A-Z">A-Z</label>
+            <input type="radio" id="A-Z" name="sortbuttons">
+            <label for="New">New</label>
+            <input type="radio" id="New" name="sortbuttons">
+
+            <h4>Filter</h4>
+            <label for="LightRoast">Light Roast</label>
+            <input type="checkbox" id="LightRoast" name="filterbuttons">
+            <label for="MediumRoast">Medium Roast</label>
+            <input type="checkbox" id="MediumRoast" name="filterbuttons">
+            <label for="DarkRoast">Dark Roast</label>
+            <input type="checkbox" id="DarkRoast" name="filterbuttons">
+            
+        </form>
+    </div>
+
+
+    <div name=shop-item-section>
+        <!--https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg-->
+        <div class=product-list>
+            <div class="product-card">
+                <a href="#imagelink"><img class=imagelink-product src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+                <h4 class=product-title>The Holiday Blend</h4>
+                <p class=product-price>$50</p>
+                <div class="product-overlay">
+                    <p class="product-text">Holiday Special</p>
+                    <p class="product-text">Brown Sugar</p>
+                    <p class="product-text">Star Anise</p>
+                </div>
+
+            </div>
+            <!--https://www.designandpaper.com/40-contemporary-and-cool-coffee-packaging-designs/-->
+            <div class="product-card">
+                <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
+                <h4 class=product-title>The Sweet Blend</h4>
+                <p class=product-price>$50</p>
+                <div class="product-overlay">
+                    <p class="product-text">Bright</p>
+                    <p class="product-text">Sweet</p>
+                    <p class="product-text">Cherry</p>
+                </div>
+
+            </div>
+            <!--                https://www.behance.net/gallery/84151819/Infinito-Caf?tracking_source=search%7Ccoffee -->
+            <div class="product-card">
+                <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"></a>
+                <h4 class=product-title>The Espresso Blend</h4>
+                <p class=product-price>$50</p>
+                <div class="product-overlay">
+                    <p class="product-text">Hazelnut</p>
+                    <p class="product-text">Dark Chocolate</p>
+                    <p class="product-text">Caramel</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
