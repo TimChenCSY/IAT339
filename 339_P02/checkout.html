@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css"> 
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>candy store</h1>
+      <h1>BRANDING STYLE GUIDE (P01)</h1>
+
+      <nav>        
+        <a class="nav-button" href="product_listing.html">product listing template</a>
+        <a class="nav-button" href="checkout.html">checkout template</a>
+        <a class="nav-button" href="index.html#interactive_elements">interactive elements</a>
+        <a class="nav-button" href="index.html#text_elements">text elements</a>
+        <a class="nav-button" href="index.html#combined_elements">combined elements</a>
+        <a class="nav-button" href="index.html#branding">branding</a>
+        <a class="nav-button" href="index.html#citations">citations</a>
+      </nav>
+      <div class="headerRectangle"></div>
+    </header>
+
+    <h2>checkout</h2>
+    <div class = "container">
+    <section class="listing-item">
+    <form>
+        <h3>Your Items</h3>
+
+        <div class = "add_border">
+        <h4>Peppermint Candy Cane (X2)</h4>
+        <label>Quantity:</label>
+        <input value = "1">
+        <h5>Cost: $2.50</h5>
+    </div>
+
+    <div class = "add_border">
+        <h4>Rainbow Lollipop</h4>
+        <label>Quantity:</label>
+        <input value="1">
+        <h5>Cost: $3.00</h5>
+    </div>
+
+        <h4>TOTAL: $5.50</h4>
+        <a class = "submit" href="product_listing.html">CONTINUE SHOPPING?</a>
+        </form>
+    </section>
+
+    <section class="listing-item-bg">
+        <form>
+            <h3>Payment Information</h3>
+            <input type = "radio" id = "CreditCard" name = "payment" value = "Credit Card">
+            <label for = "CreditCard">Credit Card</label>
+            <input type = "radio" id = "ApplePay" name = "payment" value = "Apple Pay">
+            <label for = "ApplePay">Apple Pay</label>
+            <input type = "radio" id = "Paypal" name = "payment" value = "Paypal">
+            <label for = "Paypal">Paypal</label><br>
+    
+              <label class = "input-label">card number</label>
+              <input class = "input-box">
+              <label class = "input-label">expiration date (mm/yy)</label>
+              <input class = "input-box">
+              <label class = "input-label">cvv number</label>
+              <input class = "input-box">
+              <label class = "input-label">name on card</label>
+              <input class = "input-box">
+            <input class = "submit" type="submit" value="PLACE YOUR ORDER">
+            </form>
+        </section>
+
+    </div>
+
+  </body>
+</html>
