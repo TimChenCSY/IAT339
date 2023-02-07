@@ -243,15 +243,30 @@
         <p></p>
 
         <p>Sample code:</p>
-        <code>&lt;img class = "item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"a&gt;&lt;bra&gt;&lt;h4a&gt;Peppermint Candy Cane (X2)&lt;/h4a&gt;&lt;h5&gt;$2.50&lt;/h5a&gt;&lt;a href="#"a&gt;More details&lt;/a&gt;</code>
+        <code>&lt;div class=product-list&gt;
+          &lt;div class="product-card"&gt;
+          &lt;a href="#imagelink"&gt;&lt;img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"&gt;&lt;/a&gt;
+          &lt;h4 class=product-title&gt;Candy Cane (X2)&lt;/h4&gt;
+          &lt;p class=product-price&gt;$3.50&lt;/p&gt;
+          &lt;div class="product-overlay"&gt;
+          &lt;p class="product-text"&gt;Holiday Special&lt;/p&gt;
+          &lt;p class="product-text"&gt;Refreshing&lt;/p&gt;
+          &lt;p class="product-text"&gt;Peppermint&lt;/p&gt;
+          &lt;/div&gt;</code>
 
         <div class = "rendered">
         <h4>rendered element:</h4>
-        <!-- code referenced "01_-_HTML_Basics_-_Completed" in class tutorial  -->
-        <img class = "item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"><br>
-        <h4>Peppermint Candy Cane (X2)</h4>
-        <h5>$2.50</h5>
-        <a class = "nav-button" href="#">More details</a>
+        <div class=product-list>
+          <div class="product-card">
+            <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
+            <h4 class=product-title>Candy Cane (X2)</h4>
+            <p class=product-price>$3.50</p>
+            <div class="product-overlay">
+                <p class="product-text">Holiday Special</p>
+                <p class="product-text">Refreshing</p>
+                <p class="product-text">Peppermint</p>
+            </div>
+        
         </div>
       </section>
 
