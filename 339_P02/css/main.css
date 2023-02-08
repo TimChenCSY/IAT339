@@ -109,16 +109,18 @@ border-width: thin;
     color: white;
     text-decoration: none;
     box-sizing: border-box;
+    transition-duration: 0.2s;
 }
 
 .submit:hover,
 .submit:focus {
-    background-color: rgba(176, 231, 231, 50%);
-    transition-duration: 0.8s;
+    background-color: rgba(123, 231, 231, 50%);
+    transition-duration: 0.5s;
     color: #7b1616;
     border-width: thin;
     border-style: solid;
     border-color: #7b1616;
+    transform: scale(103%);
    
 }
 
