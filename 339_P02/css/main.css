@@ -1,207 +1,225 @@
 body {
-  font-family: "poiret one", tahoma, sans-serif;
-  padding: 1rem 3rem;
+    font-family: "poiret one", tahoma, sans-serif;
+    padding: 1rem 3rem;
 }
 
 /* HEADER+NAV */
 header {
-  padding: 5rem;
-  color: black;
-  /*Value found from https://www.w3schools.com/css/css_border.asp */
-  border-left: groove;
-  border-color: #b0e7e7;
-  border-width: 0.5rem;
+    padding: 5rem;
+    color: black;
+    /*Value found from https://www.w3schools.com/css/css_border.asp */
+    border-left: groove;
+    border-color: #b0e7e7;
+    border-width: 0.5rem;
 }
 
-nav{
-  display: flex;
-  /* Line of code retrieved from: https://stackoverflow.com/questions/63136888/css-navbar-how-to-evenly-space-out-elements */
-  justify-content: center;
-  border:solid;
-  border-width: 0.2rem;
-  border-radius: 1.5rem;
-  border-color: #b0e7e7;
-  flex-wrap: wrap;
+nav {
+    display: flex;
+    /* Line of code retrieved from: https://stackoverflow.com/questions/63136888/css-navbar-how-to-evenly-space-out-elements */
+    justify-content: center;
+    border: solid;
+    border-width: 0.2rem;
+    border-radius: 1.5rem;
+    border-color: #b0e7e7;
+    flex-wrap: wrap;
 }
 
 .nav-button {
-	display: inline-block;
-	color: black;
-  text-align: center;
-	font-size: 1.1rem;
-	padding: 1rem 0.5rem;
-	text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
 }
 
-.nav-button:hover, .nav-button:focus {
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  background-color: #b0e7e7;
-  border-radius: 1.5rem;
+.nav-button:hover,
+.nav-button:focus {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: #b0e7e7;
+    border-radius: 1.5rem;
 }
 
 /* FLEXBOX */
 /* Code retrieved from in class lecture week 3 */
 .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /* Code retrieved from https://www.w3schools.com/cssref/css3_pr_flex-wrap.php */
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* Code retrieved from https://www.w3schools.com/cssref/css3_pr_flex-wrap.php */
+    flex-wrap: wrap;
 }
 
 .item {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  max-width: 50%;
-  flex: 1;
-  /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-  flex-basis: 30%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    max-width: 50%;
+    flex: 1;
+    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+    flex-basis: 30%;
 }
 
 .listing-item-bg {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  max-width: 25%;
-  flex: 1;
-  /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-  flex-basis: 15%;
-  background-color: rgb(238, 238, 238);
-  border-radius: 0.5rem;
-  margin: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    max-width: 25%;
+    flex: 1;
+    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+    flex-basis: 15%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
 }
 
 .listing-item {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  max-width: 25%;
-  flex: 1;
-  /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-  flex-basis: 15%;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    max-width: 25%;
+    flex: 1;
+    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+    flex-basis: 15%;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
 }
 
 .add_border {
-  border-radius: 0.5rem;
-  border: solid;
-  border-color: #b0e7e7;
-  padding: 0.25rem;
-  margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid;
+    border-color: #b0e7e7;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .submit {
-  margin-top: 2rem;
-  background-color: #b0e7e7;
-  border: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: white;
-  text-decoration: none;
+    margin-top: 2rem;
+    background-color: #b0e7e7;
+   
+    border-style:solid;
+    border-color: transparent;
+    padding: 1rem;
+border-width: thin;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-.submit:hover, .submit:focus{
-  background-color: rgba(176,231,231,50%);
-  transition-duration: 0.8s;
-  color:  rgb(100,100,100);
+.submit:hover,
+.submit:focus {
+    background-color: rgba(176, 231, 231, 50%);
+    transition-duration: 0.8s;
+    color: #7b1616;
+    border-width: thin;
+    border-style: solid;
+    border-color: #7b1616;
+   
 }
 
 .item-img {
- width: 6rem;
-display: block;
-/* code retrieved from https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/ */
-margin: 0 auto;
+    width: 6rem;
+    display: block;
+    /* code retrieved from https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/ */
+    margin: 0 auto;
 }
 
 
 .element {
-  /* padding-bottom: 2rem; */
+    /* padding-bottom: 2rem; */
 
-  border-color: black;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  color: black;
+    border-color: black;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    color: black;
 
 
-  /* background-color: #B0DBEC;
+    /* background-color: #B0DBEC;
   border-radius: 0.75rem;
   margin-bottom: 3rem; */
 }
 
 h1 {
-  font-size: 240%;
-  max-width: 50%;
+    font-size: 240%;
+    max-width: 50%;
 }
 
 h2 {
-  font-size: 200%;
-  color:white;
-  padding-left: 5rem;
-  padding-top: 2.5rem;
-  margin-top: 6rem;
-  background-color: #7b1616;
-  border-radius: 2rem;
+    font-size: 200%;
+    color: white;
+    padding-left: 5rem;
+    padding-top: 2.5rem;
+    margin-top: 6rem;
+    background-color: #7b1616;
+    border-radius: 2rem;
 }
 
 h3 {
-  color:#7b1616;
-  font-size: 150%;
+    color: #7b1616;
+    font-size: 150%;
 }
 
 h4 {
-  color:black;
-  margin-top: -0.01rem;
-  padding-left: 0.25rem;
+    color: black;
+    margin-top: -0.01rem;
+    padding-left: 0.25rem;
 }
 
 p {
-  max-width: 50rem;
+    max-width: 50rem;
 }
 
 .text-link {
-  color: #7b1616;
-  word-wrap: break-word;
-  text-decoration: none;
+
+    color: #7b1616;
+    word-wrap: break-word;
+    text-decoration: underline;
+  
 }
 
-.text-link:hover, .text-link:focus{
-/* Code referenced from existing template code */
-transition-property: color; 
-transition-duration: 0.3s;
-text-decoration: none;
-color: #b0e7e7;
+.text-link:hover,
+.text-link:focus {
+    /* Code referenced from existing template code */
+    transition-property: color;
+    transition-duration: 0.1s;
+    font-size: 105%;
+    padding-left: 0.51em;
+    padding-right: 0.51em;
+    text-decoration: none;
+    color: #b0e7e7;
+    background: #7b1616;
 }
 
-.img-link-hover:hover, .img-link-hover:focus{
-  /* Code referenced from existing template code */
-transition-duration: 0.2s;
-opacity: 50%;
+.img-link-hover:hover,
+.img-link-hover:focus {
+    /* Code referenced from existing template code */
+    transition-duration: 0.2s;
+    opacity: 50%;
 }
 
 code {
-  /* background-color: lightgray; */
-  font-size: 85%;
-  /* border: solid;
+    /* background-color: lightgray; */
+    font-size: 85%;
+    /* border: solid;
   border-width: 0.05rem;
   border-radius: 0.5rem; */
-  padding: 0.25rem;
-  /* code references https://www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=Add%20CSS%20Set%20the%20white-space%20property%20to%20%22pre-wrap%22.,Use%20the%20word-wrap%20property%20with%20the%20%22break-word%22%20value. */
-word-wrap: break-word;
+    padding: 0.25rem;
+    /* code references https://www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=Add%20CSS%20Set%20the%20white-space%20property%20to%20%22pre-wrap%22.,Use%20the%20word-wrap%20property%20with%20the%20%22break-word%22%20value. */
+    word-wrap: break-word;
 }
 
 .rendered {
-  margin-top: 2rem;
-  border: solid;
-  border-width: 0.2rem;
-  border-radius: 0.25rem;
-  border-color: #b0e7e7;
-  padding: 0.5rem;
+    margin-top: 2rem;
+    border: solid;
+    border-width: 0.2rem;
+    border-radius: 0.25rem;
+    border-color: #b0e7e7;
+    padding: 0.5rem;
 }
 
 
@@ -210,151 +228,156 @@ word-wrap: break-word;
 
 
 .input-box {
-  /* Code references https://w3bits.com/css-floating-labels/#:~:text=With%20having%20only%20CSS%20in%20mind%20for%20such,with%20the%20adjacent%20element%20selector%20in%20CSS%20%28%2B%29 & https://learn.shayhowe.com/html-css/building-forms/ */
-  border-width: 0;
-  outline: 0;
-  background-color: #b0e7e7;
-  border: 0.13rem solid #b0e7e7;
+    /* Code references https://w3bits.com/css-floating-labels/#:~:text=With%20having%20only%20CSS%20in%20mind%20for%20such,with%20the%20adjacent%20element%20selector%20in%20CSS%20%28%2B%29 & https://learn.shayhowe.com/html-css/building-forms/ */
+    border-width: 0;
+    outline: 0;
+    background-color: #b0e7e7;
+    border: 0.13rem solid #b0e7e7;
     /* Code retrieved from https://www.w3schools.com/css//css3_borders.asp */
-  border-radius: 0.5rem;
-  /* code from lecture 3 materials */
-  display: flex;
+    border-radius: 0.5rem;
+    /* code from lecture 3 materials */
+    display: flex;
 }
 
 .input-label {
-  font-size: 75%;
-  color: black;
-  
+    font-size: 75%;
+    color: black;
+
 }
 
-.input-box:hover, .input-box:focus {
-  transition-duration: 1s;
-  background-color: transparent;
+.input-box:hover,
+.input-box:focus {
+    transition-duration: 1s;
+    background-color: transparent;
 }
 
 @media screen and (max-width:60rem) {
-  body {
-    font-family: "poiret one", tahoma, sans-serif;
-    padding: 1rem 0.5rem;
-  }
-  .item {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    flex: 1;
-    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-    flex-basis: 30%;
-  }
-  .listing-item-bg {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    flex: 1;
-    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-    flex-basis: 15%;
-    background-color: rgb(238, 238, 238);
-    border-radius: 0.5rem;
-    margin: 0.5rem;
-  }
-  .listing-item {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    flex: 1;
-    /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
-    flex-basis: 15%;
-    border-radius: 0.5rem;
-    margin: 0.5rem;
-  }
-  h1 {
-    font-size: 170%;
-    max-width: 100%;
-  }
-  }
+    body {
+        font-family: "poiret one", tahoma, sans-serif;
+        padding: 1rem 0.5rem;
+    }
+
+    .item {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        max-width: 100%;
+        flex: 1;
+        /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+        flex-basis: 30%;
+    }
+
+    .listing-item-bg {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        max-width: 100%;
+        flex: 1;
+        /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+        flex-basis: 15%;
+        background-color: rgb(238, 238, 238);
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .listing-item {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        max-width: 100%;
+        flex: 1;
+        /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
+        flex-basis: 15%;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 170%;
+        max-width: 100%;
+    }
+}
 
 
 
 
-  /* PRODUCT LISTING (COFFEE SHOP VARIATION) */
-  .product-list {
+/* PRODUCT LISTING (COFFEE SHOP VARIATION) */
+.product-list {
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-card {
-  flex-basis: 100%;
-  flex-grow: 0;
-  border-radius: 2em;
-  margin: 2em;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  max-width: 20em;
-  height: 20em;
-  position: relative;
-  transition: all 0.3s ease-in-out;
+    flex-basis: 100%;
+    flex-grow: 0;
+    border-radius: 2em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 20em;
+    height: 20em;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 img.imagelink-product {
-  border-radius: 2rem;
-  max-width: 100%;
-  position: relative;
-  max-height: 70%;
+    border-radius: 2rem;
+    max-width: 100%;
+    position: relative;
+    max-height: 70%;
 }
 
 .product-title {
-  margin: 0.1em 0;
-  margin-top: 0.5em;
-  padding-left: 0.5em;
-  font-size: 1.5em;
-  color: black;
-  transition: all 0.3s ease-in-out;
+    margin: 0.1em 0;
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+    color: black;
+    transition: all 0.3s ease-in-out;
 }
 
 .product-price {
-  color: ;
-  margin-left: 0.8em;
+    color: ;
+    margin-left: 0.8em;
 }
 
 .product-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1em;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-  opacity: 0;
-  transition: all 0.3s;
+    opacity: 0;
+    transition: all 0.3s;
 
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .product-text {
-  width: auto;
-  display: flex;
-  margin: 0;
-  text-align: justify;
+    width: auto;
+    display: flex;
+    margin: 0;
+    text-align: justify;
 }
 
 .product-card:hover .product-overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .product-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-  transform: translateY(-1em);
-  transform: scale(101%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    transform: translateY(-1em);
+    transform: scale(101%);
 }

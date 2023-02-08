@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P01 - Style Guide Template</title>
 
     <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/fonts.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <header>
-      <h1>candy store</h1>
-      <h1>BRANDING STYLE GUIDE (P01)</h1>
+        <h1>candy store</h1>
+        <h1>BRANDING STYLE GUIDE (P01)</h1>
 
-      <nav>        
-        <a class="nav-button" href="product_listing.html">product listing template</a>
-        <a class="nav-button" href="checkout.html">checkout template</a>
-        <a class="nav-button" href="#interactive_elements">interactive elements</a>
-        <a class="nav-button" href="#text_elements">text elements</a>
-        <a class="nav-button" href="#combined_elements">combined elements</a>
-        <a class="nav-button" href="#branding">branding</a>
-        <a class="nav-button" href="#citations">citations</a>
-      </nav>
-      <div class="headerRectangle"></div>
+        <nav>
+            <a class="nav-button" href="product_listing.html">product listing template</a>
+            <a class="nav-button" href="checkout.html">checkout template</a>
+            <a class="nav-button" href="#interactive_elements">interactive elements</a>
+            <a class="nav-button" href="#text_elements">text elements</a>
+            <a class="nav-button" href="#combined_elements">combined elements</a>
+            <a class="nav-button" href="#branding">branding</a>
+            <a class="nav-button" href="#citations">citations</a>
+        </nav>
+        <div class="headerRectangle"></div>
     </header>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <h2>interactive elements</h2>
-      <div class = "container">
+        <h2>interactive elements</h2>
+        <div class="container">
 
-      <section class="element, item">
-        <h3>In-text link</h3>
+            <section class="element, item">
+                <h3>In-text link</h3>
 
-        <p>CSS selector: .text-link</p>
+                <p>CSS selector: .text-link</p>
 
-        <p>Sample code:</p>
-        <code>&lt;a  class = "text-link" href="https://www.google.com/"&gt;In-text link example&lt;/a&gt;</code>
+                <p>Sample code:</p>
+                <code>&lt;a class = "text-link" href="https://www.google.com/"&gt;In-text link example&lt;/a&gt;</code>
 
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--used earlier code in this template to influence implementation-->
-        <a class = "text-link" href="https://www.google.com/">In-text link example</a>
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--used earlier code in this template to influence implementation-->
+                    <a class="text-link" href="https://www.google.com/">In-text link example</a>
+                </div>
+            </section>
+
+
+            <!-- Default Button styling section -->
+            <section class="element, item">
+                <h3>Navigation Link</h3>
+
+                <p>CSS selector: .nav-button</p>
+
+                <p>Sample code:</p>
+                <code>&lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <a class="nav-button" href="#">Default Button</a>
+                </div>
+            </section>
+
+
+            <section class="element, item">
+                <h3>Submit/Reset Buttons</h3>
+
+                <p>CSS selector: none</p>
+
+                <p>Sample code:</p>
+                <code>&lt;input class = "submit" type="submit" value="SUBMIT"&gt;&lt;input class = "submit" type="reset" value="RESET"&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial & https://www.educba.com/html-reset-button/-->
+                    <form>
+                        <input class="submit" type="submit" value="SUBMIT">
+                        <input class="submit" type="reset" value="RESET">
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="element, item">
+                <h3>Text Input Field with Label</h3>
+
+                <p>CSS selector: .input-label & .input-box</p>
+
+                <p>Sample code:</p>
+                <code>&lt;label class = "input-label"&gt;add your input&lt;/label&gt;
+                    &lt;input class = "input-box"&gt;&lt;/input&gt;
+                </code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial-->
+                    <label class="input-label">add your input</label>
+                    <input class="input-box">
+                </div>
+            </section>
+
+
+            <section class="element, item">
+                <h3>Radio Button with Label</h3>
+
+                <p>CSS selector: none</p>
+
+                <p>Sample code:</p>
+                <code>&lt;input type = "radio" id = "Choice A" name = "groupA" value = "A"&gt;&lt;label for = "Choice A"&gt;A&lt;/label&gt;&lt;input type = "radio" id = "Choice B" name = "groupA" value = "B"&gt;&lt;label for = "Choice B"&gt;B&lt;/label&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--Code retrieved from https://www.w3schools.com/tags/att_input_type_radio.asp & https://www.w3schools.com/tags/tag_label.asp-->
+                    <input type="radio" id="ChoiceA" name="groupA" value="A">
+                    <label for="ChoiceA">A</label>
+                    <input type="radio" id="ChoiceB" name="groupA" value="B">
+                    <label for="ChoiceB">B</label>
+                </div>
+            </section>
+
+
+            <section class="element, item">
+                <h3>Image as a Link</h3>
+
+                <p>CSS selector: .item-img</p>
+
+                <p>Sample code:</p>
+                <code>&lt;a class = "img-link-hover" href = "https://www.google.com/"&gt; &lt;img class = "item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"&gt;&lt;/a&gt;
+                </code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--Code refrences https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
+                    <a class="img-link-hover" href="https://www.google.com/"> <img class="item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"></a>
+                </div>
+            </section>
         </div>
-      </section>
-
-
-      <!-- Default Button styling section -->
-      <section class="element, item">
-        <h3>Navigation Link</h3>
-
-        <p>CSS selector: .nav-button</p>
-
-        <p>Sample code:</p>
-        <code>&lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;</code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <a class="nav-button" href="#">Default Button</a>
-        </div>
-      </section>
-
-
-      <section class="element, item">
-        <h3>Submit/Reset Buttons</h3>
-
-        <p>CSS selector: none</p>
-
-        <p>Sample code:</p>
-        <code>&lt;input class = "submit" type="submit" value="SUBMIT"&gt;&lt;input class = "submit" type="reset" value="RESET"&gt;</code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial & https://www.educba.com/html-reset-button/-->
-        <form>
-        <input class = "submit" type="submit" value="SUBMIT">
-        <input class = "submit" type="reset" value="RESET">
-        </form>
-        </div>
-      </section>
-
-
-      <section class="element, item">
-        <h3>Text Input Field with Label</h3>
-
-        <p>CSS selector: .input-label & .input-box</p>
-
-        <p>Sample code:</p>
-        <code>&lt;label class = "input-label"&gt;add your input&lt;/label&gt;
-          &lt;input class = "input-box"&gt;&lt;/input&gt;
-        </code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial-->
-        <label class = "input-label">add your input</label>
-        <input class = "input-box">
-        </div>
-      </section>
-
-
-      <section class="element, item">
-        <h3>Radio Button with Label</h3>
-
-        <p>CSS selector: none</p>
-
-        <p>Sample code:</p>
-        <code>&lt;input type = "radio" id = "Choice A" name = "groupA" value = "A"&gt;&lt;label for = "Choice A"&gt;A&lt;/label&gt;&lt;input type = "radio" id = "Choice B" name = "groupA" value = "B"&gt;&lt;label for = "Choice B"&gt;B&lt;/label&gt;</code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--Code retrieved from https://www.w3schools.com/tags/att_input_type_radio.asp & https://www.w3schools.com/tags/tag_label.asp-->
-        <input type = "radio" id = "ChoiceA" name = "groupA" value = "A">
-        <label for = "ChoiceA">A</label>
-        <input type = "radio" id = "ChoiceB" name = "groupA" value = "B">
-        <label for = "ChoiceB">B</label>
-        </div>
-      </section>
-
-
-      <section class="element, item">
-        <h3>Image as a Link</h3>
-
-        <p>CSS selector: .item-img</p>
-
-        <p>Sample code:</p>
-        <code>&lt;a class = "img-link-hover" href = "https://www.google.com/"&gt; &lt;img class = "item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"&gt;&lt;/a&gt;
-        </code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--Code refrences https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
-        <a class = "img-link-hover" href = "https://www.google.com/"> <img class = "item-img" src="img/candyCane_graphic.png" alt="A graphic of two red striped candy canes"></a>
-        </div>
-      </section>
-      </div>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -147,67 +147,67 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h2>text elements</h2>
-      <div class = "container">
+        <h2>text elements</h2>
+        <div class="container">
 
-      <section class="element, item">
-        <h3>Headings</h3>
+            <section class="element, item">
+                <h3>Headings</h3>
 
-        <p>CSS selector: .h3, .h4, .h5, .h6</p>
+                <p>CSS selector: .h3, .h4, .h5, .h6</p>
 
-        <p>Sample code:</p>
-        <code>&lt;h1>Level 1&lt;/h1&gt;
-          &lt;h2&gt;Level 2&lt;/h2&gt;
-          &lt;h3&gt;Level 3&lt;/h3&gt;
-          &lt;h4&gt;Level 4&lt;/h4&gt;
-        </code>
+                <p>Sample code:</p>
+                <code>&lt;h1>Level 1&lt;/h1&gt;
+                    &lt;h2&gt;Level 2&lt;/h2&gt;
+                    &lt;h3&gt;Level 3&lt;/h3&gt;
+                    &lt;h4&gt;Level 4&lt;/h4&gt;
+                </code>
 
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--used in-class lecture 1 material to influence implementation-->
-        <h1>Level 1</h1>
-        <h2>Level 2</h2>
-        <h3>Level 3</h3>
-        <h4>Level 4</h4>
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--used in-class lecture 1 material to influence implementation-->
+                    <h1>Level 1</h1>
+                    <h2>Level 2</h2>
+                    <h3>Level 3</h3>
+                    <h4>Level 4</h4>
+                </div>
+            </section>
+
+            <section class="element, item">
+                <h3>Paragraphs</h3>
+
+                <p>CSS selector: .p</p>
+
+                <p>Sample code:</p>
+                <code>&lt;p&gt;Sample paragraph Sample paragraph Sample paragraph&lt;/p&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--used in-class lecture 1 material to influence implementation-->
+                    <p>Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph</p>
+                    <p>Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph</p>
+                </div>
+            </section>
+
+            <section class="element, item">
+                <h3>Numbered Lists</h3>
+
+                <p>CSS selector: none</p>
+
+                <p>Sample code:</p>
+                <code>&lt;ol&gt;&lt;li&gt;Value One&lt;/li&gt;&lt;li&gt;Value Two&lt;/li&gt;&lt;li&gt;Value Three&lt;/li&gt;&lt;/ol&gt;
+                </code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <ol>
+                        <li>Value One</li>
+                        <li>Value Two</li>
+                        <li>Value Three</li>
+                    </ol>
+                </div>
+            </section>
+
         </div>
-      </section>
-
-      <section class="element, item">
-        <h3>Paragraphs</h3>
-
-        <p>CSS selector: .p</p>
-
-        <p>Sample code:</p>
-        <code>&lt;p&gt;Sample paragraph Sample paragraph Sample paragraph&lt;/p&gt;</code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--used in-class lecture 1 material to influence implementation-->
-        <p>Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph</p>
-        <p>Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph Sample paragraph</p>
-        </div>
-      </section>
-
-      <section class="element, item">
-        <h3>Numbered Lists</h3>
-
-        <p>CSS selector: none</p>
-
-        <p>Sample code:</p>
-        <code>&lt;ol&gt;&lt;li&gt;Value One&lt;/li&gt;&lt;li&gt;Value Two&lt;/li&gt;&lt;li&gt;Value Three&lt;/li&gt;&lt;/ol&gt;
-        </code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <ol>
-          <li>Value One</li>
-          <li>Value Two</li>
-          <li>Value Three</li>
-        </ol>
-        </div>
-      </section>
-
-      </div>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -215,257 +215,260 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>combined elements</h2>
-      <div class = "container">
+        <h2>combined elements</h2>
+        <div class="container">
 
-      <section class="element, item">
-        <h3>Main Navigation</h3>
+            <section class="element, item">
+                <h3>Main Navigation</h3>
 
-        <p>CSS selector: .nav-button</p>
+                <p>CSS selector: .nav-button</p>
 
-        <p>Sample code:</p>
-        <code>&lt;nav&gt;&lt;a class="nav-button" href="#"&gt;HOME&lt;/a&gt;&lt;a class="nav-button" href="#"&gt;ABOUT&lt;/a&gt;&lt;a class="nav-button" href="#"&gt;PRODUCTS&lt;/a&gt;&lt;/nav&gt;</code>
+                <p>Sample code:</p>
+                <code>&lt;nav&gt;&lt;a class="nav-button" href="#"&gt;HOME&lt;/a&gt;&lt;a class="nav-button" href="#"&gt;ABOUT&lt;/a&gt;&lt;a class="nav-button" href="#"&gt;PRODUCTS&lt;/a&gt;&lt;/nav&gt;</code>
 
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <nav>
-        <a class="nav-button" href="#">HOME</a>
-        <a class="nav-button" href="#">ABOUT</a>
-        <a class="nav-button" href="#">PRODUCTS</a>
-        </nav>
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <nav>
+                        <a class="nav-button" href="#">HOME</a>
+                        <a class="nav-button" href="#">ABOUT</a>
+                        <a class="nav-button" href="#">PRODUCTS</a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="element, item">
+                <h3>Product/Service Listing</h3>
+
+                <p>CSS selector:.item-img</p>
+                <p></p>
+
+                <p>Sample code:</p>
+                <code>&lt;div class=product-list&gt;
+                    &lt;div class="product-card"&gt;
+                    &lt;a href="#imagelink"&gt;&lt;img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"&gt;&lt;/a&gt;
+                    &lt;h4 class=product-title&gt;Candy Cane (X2)&lt;/h4&gt;
+                    &lt;p class=product-price&gt;$3.50&lt;/p&gt;
+                    &lt;div class="product-overlay"&gt;
+                    &lt;p class="product-text"&gt;Holiday Special&lt;/p&gt;
+                    &lt;p class="product-text"&gt;Refreshing&lt;/p&gt;
+                    &lt;p class="product-text"&gt;Peppermint&lt;/p&gt;
+                    &lt;/div&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <div class=product-list>
+                        <div class="product-card">
+                            <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
+                            <h4 class=product-title>Candy Cane (X2)</h4>
+                            <p class=product-price>$3.50</p>
+                            <div class="product-overlay">
+                                <p class="product-text">Holiday Special</p>
+                                <p class="product-text">Refreshing</p>
+                                <p class="product-text">Peppermint</p>
+                            </div>
+
+                        </div>
+            </section>
+
+            <section class="element, item">
+                <h3>Payment Form</h3>
+
+                <p>CSS selector: .input-box & .input-label</p>
+
+                <p>Sample code:</p>
+                <code>&lt;form&gt;
+                    &lt;h3>Payment Information&lt;/h3&gt;
+                    &lt;input type = "radio" id = "Credit Card" name = "payment" value = "Credit Card"&gt;
+                    &lt;label for = "Credit Card"&gt;Credit Card&lt;/label&gt;
+                    &lt;input type = "radio" id = "Apple Pay" name = "payment" value = "Apple Pay"&gt;
+                    &lt;label for = "Apple Pay"&gt;Apple Pay&lt;/label&gt;
+                    &lt;input type = "radio" id = "Paypal" name = "payment" value = "Paypal"&gt;
+                    &lt;label for = "Paypal"&gt;Paypal&lt;/label&gt;&lt;br&gt;
+                    &lt;label class = "input-label"&gt;card number&lt;/label&gt;
+                    &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
+                    &lt;label class = "input-label"&gt;expiration date (mm/yy)&lt;/label&gt;
+                    &lt;input class = "input-box""&gt;&lt;/input&gt;&lt;br&gt;
+                    &lt;label class = "input-label"&gt;cvv number&lt;/label&gt;
+                    &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
+                    &lt;label class = "input-label"&gt;name on card&lt;/label&gt;
+                    &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
+                    &lt;input class = "submit" type="submit" value="PLACE YOUR ORDER"&gt;
+                    &lt;/form&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--used earlier code in this template to influence implementation-->
+                    <form>
+                        <h3>Payment Information</h3>
+                        <input type="radio" id="CreditCard" name="payment" value="Credit Card">
+                        <label for="CreditCard">Credit Card</label>
+                        <input type="radio" id="ApplePay" name="payment" value="Apple Pay">
+                        <label for="ApplePay">Apple Pay</label>
+                        <input type="radio" id="Paypal" name="payment" value="Paypal">
+                        <label for="Paypal">Paypal</label><br>
+
+                        <label class="input-label">card number</label>
+                        <input class="input-box">
+                        <label class="input-label">expiration date (mm/yy)</label>
+                        <input class="input-box">
+                        <label class="input-label">cvv number</label>
+                        <input class="input-box">
+                        <label class="input-label">name on card</label>
+                        <input class="input-box">
+                        <input class="submit" type="submit" value="PLACE YOUR ORDER">
+                    </form>
+                </div>
+            </section>
+
+            <section class="element, item">
+                <h3>Checkout Cart</h3>
+
+                <p>CSS selector: none</p>
+
+                <p>Sample code:</p>
+                <code>&lt;form&gt;
+                    &lt;h3&gt;Your Items&lt;/h3&gt;
+                    &lt;div class = "add_border"&gt;
+                    &lt;h6&gt;Peppermint Candy Cane&lt;/h6&gt;
+                    &lt;label&gt;Quantity:&lt;/label&gt;
+                    &lt;input value = "1"&gt;&lt;/input&gt;
+                    &lt;h5&gt;Cost: $2.50&lt;/h5&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class = "add_border"&gt;
+                    &lt;h6&gt;Rainbow Lollipop&lt;/h6&gt;
+                    &lt;label&gt;Quantity:&lt;/label&gt;
+                    &lt;input value="1"&gt;&lt;/input&gt;
+                    &lt;h5&gt;Cost: $3.00&lt;/h5&gt;
+                    &lt;/div&gt;
+
+                    &lt;h6&gt;TOTAL: $5.50&lt;/h6&gt;
+                    &lt;a class = "submit" href="product_listing.html"&gt;CONTINUE SHOPPING?&lt;/a&gt;
+                    &lt;/form&gt;</code>
+
+                <div class="rendered">
+                    <h4>rendered element:</h4>
+                    <!--used earlier code in this template to influence implementation-->
+                    <form>
+                        <h3>Your Items</h3>
+                        <div class="add_border">
+                            <h4>Peppermint Candy Cane (X2)</h4>
+                            <label>Quantity:</label>
+                            <input value="1">
+                            <h5>Cost: $2.50</h5>
+                        </div>
+
+                        <div class="add_border">
+                            <h4>Rainbow Lollipop</h4>
+                            <label>Quantity:</label>
+                            <input value="1">
+                            <h5>Cost: $3.00</h5>
+                        </div>
+                        <h4>TOTAL: $5.50</h4>
+
+                        <a class="submit" href="product_listing.html">CONTINUE SHOPPING?</a>
+
+                    </form>
+                </div>
+            </section>
+
         </div>
-      </section>
-
-      <section class="element, item">
-        <h3>Product/Service Listing</h3>
-
-        <p>CSS selector:.item-img</p>
-        <p></p>
-
-        <p>Sample code:</p>
-        <code>&lt;div class=product-list&gt;
-          &lt;div class="product-card"&gt;
-          &lt;a href="#imagelink"&gt;&lt;img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"&gt;&lt;/a&gt;
-          &lt;h4 class=product-title&gt;Candy Cane (X2)&lt;/h4&gt;
-          &lt;p class=product-price&gt;$3.50&lt;/p&gt;
-          &lt;div class="product-overlay"&gt;
-          &lt;p class="product-text"&gt;Holiday Special&lt;/p&gt;
-          &lt;p class="product-text"&gt;Refreshing&lt;/p&gt;
-          &lt;p class="product-text"&gt;Peppermint&lt;/p&gt;
-          &lt;/div&gt;</code>
-
-        <div class = "rendered">
-        <h4>rendered element:</h4>
-        <div class=product-list>
-          <div class="product-card">
-            <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
-            <h4 class=product-title>Candy Cane (X2)</h4>
-            <p class=product-price>$3.50</p>
-            <div class="product-overlay">
-                <p class="product-text">Holiday Special</p>
-                <p class="product-text">Refreshing</p>
-                <p class="product-text">Peppermint</p>
-            </div>
-        
-        </div>
-      </section>
-
-      <section class="element, item">
-        <h3>Payment Form</h3>
-
-        <p>CSS selector: .input-box & .input-label</p>
-
-        <p>Sample code:</p>
-        <code>&lt;form&gt;
-          &lt;h3>Payment Information&lt;/h3&gt;
-          &lt;input type = "radio" id = "Credit Card" name = "payment" value = "Credit Card"&gt;
-          &lt;label for = "Credit Card"&gt;Credit Card&lt;/label&gt;
-          &lt;input type = "radio" id = "Apple Pay" name = "payment" value = "Apple Pay"&gt;
-          &lt;label for = "Apple Pay"&gt;Apple Pay&lt;/label&gt;
-          &lt;input type = "radio" id = "Paypal" name = "payment" value = "Paypal"&gt;
-          &lt;label for = "Paypal"&gt;Paypal&lt;/label&gt;&lt;br&gt;
-          &lt;label class = "input-label"&gt;card number&lt;/label&gt;
-          &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
-          &lt;label class = "input-label"&gt;expiration date (mm/yy)&lt;/label&gt;
-          &lt;input class = "input-box""&gt;&lt;/input&gt;&lt;br&gt;
-          &lt;label class = "input-label"&gt;cvv number&lt;/label&gt;
-          &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
-          &lt;label class = "input-label"&gt;name on card&lt;/label&gt;
-          &lt;input class = "input-box"&gt;&lt;/input&gt;&lt;br&gt;
-          &lt;input class = "submit" type="submit" value="PLACE YOUR ORDER"&gt;
-          &lt;/form&gt;</code>
-
-          <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--used earlier code in this template to influence implementation-->
-        <form>
-        <h3>Payment Information</h3>
-        <input type = "radio" id = "CreditCard" name = "payment" value = "Credit Card">
-        <label for = "CreditCard">Credit Card</label>
-        <input type = "radio" id = "ApplePay" name = "payment" value = "Apple Pay">
-        <label for = "ApplePay">Apple Pay</label>
-        <input type = "radio" id = "Paypal" name = "payment" value = "Paypal">
-        <label for = "Paypal">Paypal</label><br>
-
-          <label class = "input-label">card number</label>
-          <input class = "input-box">
-          <label class = "input-label">expiration date (mm/yy)</label>
-          <input class = "input-box">
-          <label class = "input-label">cvv number</label>
-          <input class = "input-box">
-          <label class = "input-label">name on card</label>
-          <input class = "input-box">
-        <input class = "submit" type="submit" value="PLACE YOUR ORDER">
-        </form>
-          </div>
-      </section>
-
-      <section class="element, item">
-        <h3>Checkout Cart</h3>
-
-        <p>CSS selector: none</p>
-
-        <p>Sample code:</p>
-        <code>&lt;form&gt;
-          &lt;h3&gt;Your Items&lt;/h3&gt;
-          &lt;div class = "add_border"&gt;
-          &lt;h6&gt;Peppermint Candy Cane&lt;/h6&gt;
-          &lt;label&gt;Quantity:&lt;/label&gt;
-          &lt;input value = "1"&gt;&lt;/input&gt;
-          &lt;h5&gt;Cost: $2.50&lt;/h5&gt;
-          &lt;/div&gt;
-
-          &lt;div class = "add_border"&gt;
-          &lt;h6&gt;Rainbow Lollipop&lt;/h6&gt;
-          &lt;label&gt;Quantity:&lt;/label&gt;
-          &lt;input value="1"&gt;&lt;/input&gt;
-          &lt;h5&gt;Cost: $3.00&lt;/h5&gt;
-          &lt;/div&gt;
-    
-          &lt;h6&gt;TOTAL: $5.50&lt;/h6&gt;
-          &lt;a class = "submit" href="product_listing.html"&gt;CONTINUE SHOPPING?&lt;/a&gt;
-          &lt;/form&gt;</code>
-
-          <div class = "rendered">
-        <h4>rendered element:</h4>
-        <!--used earlier code in this template to influence implementation-->
-        <form>
-        <h3>Your Items</h3>
-        <div class = "add_border">
-          <h4>Peppermint Candy Cane (X2)</h4>
-          <label>Quantity:</label>
-          <input value = "1">
-          <h5>Cost: $2.50</h5>
-      </div>
-
-      <div class = "add_border">
-        <h4>Rainbow Lollipop</h4>
-        <label>Quantity:</label>
-        <input value="1">
-        <h5>Cost: $3.00</h5>
-    </div>
-        <h4>TOTAL: $5.50</h4>
-        <a class = "submit" href="product_listing.html">CONTINUE SHOPPING?</a>
-        </form>
-          </div>
-      </section>
-
-      </div>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <!-- BRANDING SECTION // -->
     <section id="branding">
-      <h2>branding</h2>
-      <div class = "container">
+        <h2>branding</h2>
+        <div class="container">
 
-      <section class="element, item">
-        <h3>Basic Branding</h3>
-        <h4>What does the company offer?</h4>
-        <p>The company sells candy and other circus or carnival related snacks with a significant part of its identity focused on gift giving & shopping for other customers </p>
+            <section class="element, item">
+                <h3>Basic Branding</h3>
+                <h4>What does the company offer?</h4>
+                <p>The company sells candy and other circus or carnival related snacks with a significant part of its identity focused on gift giving & shopping for other customers </p>
 
-        <h4>Who is the company to potential customers?</h4>
-        <p>As a "person" this company is sensory based, with a retro feel as well:</p>
-          <ul>
-            <li>classy</li>
-            <li>nostalgic</li>
-            <li>dynamic/movement</li>
-          </ul>
-        
+                <h4>Who is the company to potential customers?</h4>
+                <p>As a "person" this company is sensory based, with a retro feel as well:</p>
+                <ul>
+                    <li>classy</li>
+                    <li>nostalgic</li>
+                    <li>dynamic/movement</li>
+                </ul>
 
-        <h4>Why might this company entice someone to purchase a product?</h4>
-        <p>In comparison to traditional candy shops, which tend to either be very playful, or fancy and dignified, this brand aims to provide a balance of both. It would capture the simplistic ways of excitement of a person through candy and nostalgic carnival/circus environments. It also would lean into the consumer behaviours of buying for others; an important aspect of a consumer that pairs well with a candy business. This allows a customer to be able to fulfill gifts for a wide range of family members or friends.</p>
 
-        <p>Our brand is simple and classic, which emphasizes an association with nostalgic environments like vintage circuses and carnivals, both of which are associated with the product of candy. These influences are well known to be very distinct, vivid, memorable, and fun, leading to customers eager to visit or return again.</p>
+                <h4>Why might this company entice someone to purchase a product?</h4>
+                <p>In comparison to traditional candy shops, which tend to either be very playful, or fancy and dignified, this brand aims to provide a balance of both. It would capture the simplistic ways of excitement of a person through candy and nostalgic carnival/circus environments. It also would lean into the consumer behaviours of buying for others; an important aspect of a consumer that pairs well with a candy business. This allows a customer to be able to fulfill gifts for a wide range of family members or friends.</p>
 
-      </section>
+                <p>Our brand is simple and classic, which emphasizes an association with nostalgic environments like vintage circuses and carnivals, both of which are associated with the product of candy. These influences are well known to be very distinct, vivid, memorable, and fun, leading to customers eager to visit or return again.</p>
 
-      <section class="element, item">
-        <h3>Font Combinations</h3>
-        <p>The main font family used is Poiret One by Denis Masharov (2011). This font achieves a simple and classy format, while still having some playfulness. It can be found at: </p>
-        <a class = "text-link" href="https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace">Google Fonts</a>
-        <h1>main heading</h1>
-        <p>Main headings and sections heading are larger and all lowercase to place more emphasis on their playful form, rather than being more boxy and squared</p>
-        <p>Paragraphs are styled thin to lessen their importance, as much of the brand revolves around colour and images rather than larger passages of text.</p>
-        <a class="nav-button" href="#">navigation button</a>
-        <p>Navigation text is similar in style to paragraphs, but is larger and combined with hover & focus effects to ensure their importance differently from other text on the layout.</p>
-      </section>
+            </section>
 
-      <section class="element, item">
-        <h3>Colour Palettes</h3>
-        <!--This code retrieved from https://www.w3schools.com/html/html_colors.asp-->
-        <h4>Some colour palette options that were considered include:</h4>
-        <p>A classic, refreshing palette synonymous with our line of products:</p>
-        <p style="background-color:#EF9FC9;">#EF9FC9</p>
-        <p style="background-color:#9FE090;">#9FE090</p>
-        <p>Busy, fun, vibrant palette. When paired with the Poiret One font, it becomes extremely playful:</p>
-        <p style="background-color:#78DAF8;">#78DAF8</p>
-        <p style="background-color:#F1FEB0;">#F1FEB0</p>
-        <p style="background-color:#D49EFC;">#D49EFC</p>
+            <section class="element, item">
+                <h3>Font Combinations</h3>
+                <p>The main font family used is Poiret One by Denis Masharov (2011). This font achieves a simple and classy format, while still having some playfulness. It can be found at: </p>
+                <a class="text-link" href="https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace">Google Fonts</a>
+                <h1>main heading</h1>
+                <p>Main headings and sections heading are larger and all lowercase to place more emphasis on their playful form, rather than being more boxy and squared</p>
+                <p>Paragraphs are styled thin to lessen their importance, as much of the brand revolves around colour and images rather than larger passages of text.</p>
+                <a class="nav-button" href="#">navigation button</a>
+                <p>Navigation text is similar in style to paragraphs, but is larger and combined with hover & focus effects to ensure their importance differently from other text on the layout.</p>
+            </section>
 
-        <h4>Final Colour Palette</h4>
-        <p>The final colour palette, a combination of maroon and light blue, is carnival inspired and more sophisticated. It works best with the art direction intended and maintains a clean, well kept sense:</p>
-        <p style="background-color:#b0e7e7;">#b0e7e7</p>
-        <p style="background-color:#7b1616;">#7b1616</p>
-      </section>
+            <section class="element, item">
+                <h3>Colour Palettes</h3>
+                <!--This code retrieved from https://www.w3schools.com/html/html_colors.asp-->
+                <h4>Some colour palette options that were considered include:</h4>
+                <p>A classic, refreshing palette synonymous with our line of products:</p>
+                <p style="background-color:#EF9FC9; padding: 1rem;">#EF9FC9</p>
+                <p style="background-color:#9FE090;padding: 1rem;">#9FE090</p>
+                <p>Busy, fun, vibrant palette. When paired with the Poiret One font, it becomes extremely playful:</p>
+                <p style="background-color:#78DAF8;padding: 1rem;">#78DAF8</p>
+                <p style="background-color:#F1FEB0;padding: 1rem;">#F1FEB0</p>
+                <p style="background-color:#D49EFC;padding: 1rem;">#D49EFC</p>
 
-      <section class="element, item">
-        <h3>Types of Imagery</h3>
-        <p>Our brand imagery builds upon the retro impression of the brand. The imagery is dynamic, and filled with colour, but also has a sense of unity without feeling too busy. One of either red or pink is a key colour choice to convey the overall theme. The carnival connotation of some of our images helps to generate a "sensory" feeling where the viewer can draw upon past memories of the vivid smells or sounds that the place is known for. Some inspiration examples of imagery options include:</p>
-        
-        <img class= "item-img" src="img/giftBox.jfif" alt="A simple red and white gift box with a bow">
-        <p>A significant brand image that is represented closely with the brand name to convey our main business target purpose of gift giving.</p>
-        
-        <img class= "item-img" src="img/stripes.jpg" alt="Flat surface of alternating red and white stripes">
-        <p>Graphics with stripes or alternating colours builds our theme, and conveys it simply to the customer.</p>
-        
-        <img class= "item-img" src="img/candyGraphics.jpg" alt="A collection of posters with candy related graphics, in a vintage style and motif.">
-        <p>Vintage styles of images, graphics and hand drawn posters will feature on the main pages to emphasize retro branding.</p>
-        <img class= "item-img" src="img/midway.jpg" alt="A pastel coloured midway with rides and lights">
-        <p>Images in locations such as "about" which do not need to directly promote our product line convey the nostalgic, memorable, and warm feeling to the customers</p>
-      </section>
-      </div>
+                <h4>Final Colour Palette</h4>
+                <p>The final colour palette, a combination of maroon and light blue, is carnival inspired and more sophisticated. It works best with the art direction intended and maintains a clean, well kept sense:</p>
+                <p style="background-color:#b0e7e7;padding: 1rem;">#b0e7e7</p>
+                <p style="background-color:#7b1616; color: white;padding: 1rem;">#7b1616</p>
+            </section>
+
+            <section class="element, item">
+                <h3>Types of Imagery</h3>
+                <p>Our brand imagery builds upon the retro impression of the brand. The imagery is dynamic, and filled with colour, but also has a sense of unity without feeling too busy. One of either red or pink is a key colour choice to convey the overall theme. The carnival connotation of some of our images helps to generate a "sensory" feeling where the viewer can draw upon past memories of the vivid smells or sounds that the place is known for. Some inspiration examples of imagery options include:</p>
+
+                <img class="item-img" src="img/giftBox.jfif" alt="A simple red and white gift box with a bow">
+                <p>A significant brand image that is represented closely with the brand name to convey our main business target purpose of gift giving.</p>
+
+                <img class="item-img" src="img/stripes.jpg" alt="Flat surface of alternating red and white stripes">
+                <p>Graphics with stripes or alternating colours builds our theme, and conveys it simply to the customer.</p>
+
+                <img class="item-img" src="img/candyGraphics.jpg" alt="A collection of posters with candy related graphics, in a vintage style and motif.">
+                <p>Vintage styles of images, graphics and hand drawn posters will feature on the main pages to emphasize retro branding.</p>
+                <img class="item-img" src="img/midway.jpg" alt="A pastel coloured midway with rides and lights">
+                <p>Images in locations such as "about" which do not need to directly promote our product line convey the nostalgic, memorable, and warm feeling to the customers</p>
+            </section>
+        </div>
     </section>
     <!-- BRANDING SECTION // -->
 
 
     <section id="citations">
-      <h2>citations</h2>
+        <h2>citations</h2>
 
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a class = "text-link" href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Masharov, Denis. Designer. 2011. <strong>Poiret One [Font]</strong>. Retrieved from <a class = "text-link" href="https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace">https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace</a>.</li>
-        <li>pinterest.com. N.D. <strong>Midway [Image]</strong>. Retrieved from <a class = "text-link" href="https://www.pinterest.ca/pin/509962357790302067/">https://www.pinterest.ca/pin/509962357790302067/</a></li>
-        <li>walmart.ca. N.D. <strong>Gift Box [Image]</strong>. Retrieved from <a class = "text-link" href="https://www.walmart.com/ip/Efavormart-100pcs-of-2x2-Ivory-Favor-Candy-Box-for-Candy-Treat-Gift-Wrap-Box-Party-Favor-Boxes-for-Bridal-Shower-Wedding-Party/266577256">https://www.walmart.com/ip/Efavormart-100pcs-of-2x2-Ivory-Favor-Candy-Box-for-Candy-Treat-Gift-Wrap-Box-Party-Favor-Boxes-for-Bridal-Shower-Wedding-Party/266577256</a></li>
-        <li>freepik.com. N.D. <strong>Vintage Poster [Image]</strong>. Retrieved from <a class = "text-link" href="https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm">https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm</a></li>
-        <li>
-          istockphoto.com. N.D. <strong>Stripes [Image]</strong>. Retrieved from <a class = "text-link" href="https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995">https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995</a></li>
-        <li>pngimg.com. N.D. <strong>Lollipop [Image]</strong>. Retrieved from <a class = "text-link" href="https://pngimg.com/image/13788">https://pngimg.com/image/13788</a></li>
-      </ul>
+        <ul>
+            <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a class="text-link" href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+            <li>Masharov, Denis. Designer. 2011. <strong>Poiret One [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace">https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace</a>.</li>
+            <li>pinterest.com. N.D. <strong>Midway [Image]</strong>. Retrieved from <a class="text-link" href="https://www.pinterest.ca/pin/509962357790302067/">https://www.pinterest.ca/pin/509962357790302067/</a></li>
+            <li>walmart.ca. N.D. <strong>Gift Box [Image]</strong>. Retrieved from <a class="text-link" href="https://www.walmart.com/ip/Efavormart-100pcs-of-2x2-Ivory-Favor-Candy-Box-for-Candy-Treat-Gift-Wrap-Box-Party-Favor-Boxes-for-Bridal-Shower-Wedding-Party/266577256">https://www.walmart.com/ip/Efavormart-100pcs-of-2x2-Ivory-Favor-Candy-Box-for-Candy-Treat-Gift-Wrap-Box-Party-Favor-Boxes-for-Bridal-Shower-Wedding-Party/266577256</a></li>
+            <li>freepik.com. N.D. <strong>Vintage Poster [Image]</strong>. Retrieved from <a class="text-link" href="https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm">https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm</a></li>
+            <li>
+                istockphoto.com. N.D. <strong>Stripes [Image]</strong>. Retrieved from <a class="text-link" href="https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995">https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995</a></li>
+            <li>pngimg.com. N.D. <strong>Lollipop [Image]</strong>. Retrieved from <a class="text-link" href="https://pngimg.com/image/13788">https://pngimg.com/image/13788</a></li>
+        </ul>
 
     </section>
 
 
 
-  </body>
+</body>
+
 </html>
