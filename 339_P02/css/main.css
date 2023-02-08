@@ -206,7 +206,8 @@ p {
 }
 
 code {
-    /* background-color: lightgray; */
+     background-color:seashell; 
+    display: block;
     font-size: 85%;
     /* border: solid;
   border-width: 0.05rem;
