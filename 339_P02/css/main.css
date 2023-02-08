@@ -31,12 +31,13 @@ nav {
     font-size: 1.1rem;
     padding: 1rem 0.5rem;
     text-decoration: none;
+     transition-duration: 0.1s;
 }
 
 .nav-button:hover,
 .nav-button:focus {
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
     background-color: #b0e7e7;
     border-radius: 1.5rem;
 }
