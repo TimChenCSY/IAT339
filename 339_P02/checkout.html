@@ -31,53 +31,90 @@
     </header>
 
     <h2>checkout</h2>
-    <div class = "container">
-    <section class="listing-item">
+
+<!--Price summary section-->
+  <div class="product-brief">
+      <div class=product-brief-block>
+          <a href="#imagelink"><img class=imagelink-productbrief src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+      </div>
+      <div class=product-brief-block>
+          <h4 class=product-brief-title>Rainbow Lollipop</h4>
+          <p class=product-brief-price>$4.00</p>
+      </div>
+
+      <div class=product-brief-block>
+          <p class=product-brief-count> <b> - 1 + </b>
+          <p>
+      </div>
+
+  </div>
+  <div class="product-brief">
+      <div class=product-brief-block>
+          <a href="#imagelink"><img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"></a>
+      </div>
+      <div class=product-brief-block>
+          <h4 class=product-brief-title>Candy Cane (X2)</h4>
+          <p class=product-brief-price>$3.50</p>
+      </div>
+
+      <div class=product-brief-block>
+          <p class=product-brief-count> <b> - 1 + </b>
+          <p>
+      </div>
+
+  </div>
+  <div class=shippingaligntext>
+      <h4>Subtotal: 7.50$</h4>
+      <h4>Shipping: Free</h4>
+      <h3>Total: $7.50</h3>
+  </div>
+
+</section>
+
+<!-- Payment section(credit card info & shipping)-->
+<section class= seperatetop>
+
+<div class = "container">
+  <section class="listing-item-bg">
     <form>
-        <h3>Your Items</h3>
+        <h3>Credit Card Information</h3>
+        <input type = "radio" id = "CreditCard" name = "payment" value = "Credit Card">
+        <label for = "CreditCard">Credit Card</label>
+        <input type = "radio" id = "ApplePay" name = "payment" value = "Apple Pay">
+        <label for = "ApplePay">Apple Pay</label>
+        <input type = "radio" id = "Paypal" name = "payment" value = "Paypal">
+        <label for = "Paypal">Paypal</label>
 
-        <div class = "add_border">
-        <h4>Peppermint Candy Cane (X2)</h4>
-        <label>Quantity:</label>
-        <input value = "1">
-        <h5>Cost: $2.50</h5>
-    </div>
-
-    <div class = "add_border">
-        <h4>Rainbow Lollipop</h4>
-        <label>Quantity:</label>
-        <input value="1">
-        <h5>Cost: $3.00</h5>
-    </div>
-
-        <h4>TOTAL: $5.50</h4>
-        <a class = "submit" href="product_listing.html">CONTINUE SHOPPING?</a>
+          <label class = "input-label">card number</label>
+          <input class = "input-box">
+          <label class = "input-label">expiration date (mm/yy)</label>
+          <input class = "input-box">
+          <label class = "input-label">cvv number</label>
+          <input class = "input-box">
+          <label class = "input-label">name on card</label>
+          <input class = "input-box">
         </form>
-    </section>
+  </section>
 
-    <section class="listing-item-bg">
-        <form>
-            <h3>Payment Information</h3>
-            <input type = "radio" id = "CreditCard" name = "payment" value = "Credit Card">
-            <label for = "CreditCard">Credit Card</label>
-            <input type = "radio" id = "ApplePay" name = "payment" value = "Apple Pay">
-            <label for = "ApplePay">Apple Pay</label>
-            <input type = "radio" id = "Paypal" name = "payment" value = "Paypal">
-            <label for = "Paypal">Paypal</label><br>
-    
-              <label class = "input-label">card number</label>
-              <input class = "input-box">
-              <label class = "input-label">expiration date (mm/yy)</label>
-              <input class = "input-box">
-              <label class = "input-label">cvv number</label>
-              <input class = "input-box">
-              <label class = "input-label">name on card</label>
-              <input class = "input-box">
-            <input class = "submit" type="submit" value="PLACE YOUR ORDER">
-            </form>
-        </section>
+  <section class="listing-item-bg">
+    <form>
+      <h3>Shipping Information</h3>
+        <label class = "input-label">full name</label>
+        <input class = "input-box">
+        <label class = "input-label">email</label>
+        <input class = "input-box">
+        <label class = "input-label">shipping address</label>
+        <input class = "input-box">
+        <label class = "input-label">city</label>
+        <input class = "input-box">
+        <label class = "input-label">postal code</label>
+        <input class = "input-box">
+      </form>
+  </section>
 
-    </div>
+</div>
+<input class = "submit shippingaligntext" type="submit" value="ORDER">
+</section>
 
   </body>
 </html>

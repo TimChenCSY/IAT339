@@ -72,7 +72,7 @@ nav {
     flex: 1;
     /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
     flex-basis: 15%;
-    background-color: rgb(238, 238, 238);
+    background-color: whitesmoke;
     border-radius: 0.5rem;
     margin: 0.5rem;
 }
@@ -123,6 +123,11 @@ border-width: thin;
     border-color: #7b1616;
     transform: scale(103%);
    
+}
+
+.center {
+    float: right;
+    margin-right: 50%;
 }
 
 .item-img {
@@ -345,7 +350,7 @@ img.imagelink-product {
 }
 
 .product-price {
-    color: ;
+    /* color: ; */
     margin-left: 0.8em;
 }
 
@@ -384,4 +389,122 @@ img.imagelink-product {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
     transform: translateY(-1em);
     transform: scale(101%);
+}
+
+/* CHECKOUT (COFFEE SHOP VARIATION) */
+.seperatetop {
+    margin-top: 11em;
+}
+
+img.imagelink-productbrief {
+    position: relative;
+    border-radius: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 12em;
+    height: 100%;
+    width: inherit;
+    display: inline-flex;
+    background-color: whitesmoke;
+    flex-basis: 1;
+}
+
+.product-brief {
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-flex;
+    flex-basis: 90%;
+    flex-grow: 0;
+    max-height: 10em;
+    max-width: 53%;
+    min-width: 30em;
+}
+
+.product-brief-title {
+    margin: 0.1em 0;
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-brief-text {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-brief-block {
+    flex-basis: 5em;
+    flex-grow: 1;
+}
+
+.product-brief-price {
+    margin-left: 0.8em;
+}
+
+.product-brief-count {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-left: 0.8em;
+
+
+}
+
+.shippingaligntext {
+    float: right;
+    margin-right: 50%;
+}
+
+.formbody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    width: 70%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-grow: 2;
+    flex-basis: 50%;
+}
+
+.formrow {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
+
+
+
+}
+
+formblock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+}
+
+.inputfield-shipping {
+    border-radius: 0;
+    height: 2rem;
+    width: 20em;
+    max-width: 100%;
+    min-width: 0;
+    background-color: white;
+    margin: 0.5rem;
+    margin-top: -0.5em;
+    margin-left: -0.2em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1rem soild red;
+    border-color: black;
+    cursor: text;
+    flex-basis: 50%;
+    /*https://www.w3schools.com/css/css_form.asp*/
 }
