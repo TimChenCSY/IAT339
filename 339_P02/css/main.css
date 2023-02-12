@@ -58,7 +58,9 @@ nav {
     padding-top: 3rem;
     padding-bottom: 2rem;
     max-width: 50%;
+   
     flex: 1;
+
     /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
     flex-basis: 30%;
 }
@@ -272,6 +274,7 @@ code {
         padding-top: 3rem;
         padding-bottom: 2rem;
         max-width: 100%;
+        min-width: 55%;
         flex: 1;
         /* Code retrieved from https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number */
         flex-basis: 30%;
