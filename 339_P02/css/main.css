@@ -103,7 +103,6 @@ nav {
 .submit {
     margin-top: 2rem;
     background-color: #b0e7e7;
-
     border-style: solid;
     border-color: transparent;
     padding: 1rem;
@@ -113,7 +112,9 @@ nav {
     text-decoration: none;
     box-sizing: border-box;
     transition-duration: 0.2s;
+
 }
+
 
 .submit:hover,
 .submit:focus {
@@ -251,8 +252,9 @@ code {
 }
 
 .input-label {
-    font-size: 75%;
+    font-size: 110%;
     color: black;
+    margin-right: 0.5em;
 
 }
 
@@ -311,6 +313,31 @@ code {
         font-size: 170%;
         max-width: 100%;
     }
+
+    .product-container {
+
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .product-details {
+        position: static;
+        top: none;
+
+
+
+    }
+
+    .product-img {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        max-height: inherit;
+        float: center;
+
+    }
+
+    /*end of @media screen and (max-width:60rem)*/
 }
 
 
@@ -531,3 +558,106 @@ formblock {
     flex-basis: 50%;
     /*https://www.w3schools.com/css/css_form.asp*/
 }
+
+/*----Testing--Tim--*/
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.product-img {
+    flex-basis: auto;
+    max-width: 30%;
+    min-width: 15em;
+    margin: 10%;
+    margin-right: 5%;
+    float: left;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+
+.product-img img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    flex-basis: 70%;
+    max-width: 40%;
+    position: sticky;
+    top: 10em;
+    box-sizing: inherit;
+    margin-top: 10%;
+    margin-left: 1px;
+    align-self: flex-start;
+
+
+}
+
+
+.product-selection {
+    display: flex;
+    align-items: center;
+
+}
+
+.product-selection select {
+    margin-right: 1em;
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+select {
+
+
+    border: 1px solid #7b1616;
+    ;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: whitesmoke;
+
+}
+
+select:hover,
+select:focus-within {
+    background: rgba(123, 231, 231, 50%);
+}
+
+.addtocart {
+    font-size: 1.5em;
+    align-items: flex-end;
+}
+
+/*
+.product-quantity label {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+*/
+/*
+
+.product-quantity input[type="number"] {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 18px;
+    width: 50px;
+}
+*/
+
+.product-quantity button {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+/*End of testing*/
