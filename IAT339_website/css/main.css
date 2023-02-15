@@ -8,15 +8,18 @@ header {
     padding: 2rem;
 }
 
-/* temporary logo for header. NOTE logo will eventually be an image as a link? */
+/* temporary logo for now? */
 .logo-link {
     position: absolute;
     margin-left: 11rem;
 
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #b0e7e7;
+    border: solid;
+    border-radius: 5rem;
+    border-width: 1rem;
+    border-color: white;
     margin-top: -0.5rem;
     font-size: 1.25rem;
     color: black;
@@ -70,10 +73,13 @@ a.nav-link:hover, a.nav-link:focus {
         position: absolute;
         margin-left: 0rem;
 
-        width: 6rem;
-        height: 6rem;
-        border-radius: 5rem;
+        width: 4rem;
+        height: 4rem;
         background-color: #b0e7e7;
+        border: solid;
+        border-radius: 5rem;
+        border-width: 1rem;
+        border-color: white;
         margin-top: -0.5rem;
         font-size: 1.25rem;
         color: black;
@@ -111,14 +117,30 @@ background-color: whitesmoke;
 }
 
 .footer-item {
+    max-width: 40%;
+    text-align: center;
+}
+@media screen and (max-width:65rem) {
+    .footer-item {
+        max-width: 70%;
+        text-align: center;
+    }
 }
 
-/* temporary logo for footer. NOTE logo will eventually be an image as a link? */
-.logo-link-footer {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5rem;
+.footer-contactinfo {
+    margin: 0.5rem;
     background-color: #b0e7e7;
+}
+
+/* temporary logo for now? */
+.logo-link-footer {
+    width: 4rem;
+    height: 4rem;
+    background-color: #b0e7e7;
+    border: solid;
+    border-radius: 5rem;
+    border-width: 1rem;
+    border-color: white;
     font-size: 1.25rem;
     color: black;
     text-align: center;
