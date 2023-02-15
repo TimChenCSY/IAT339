@@ -761,3 +761,51 @@ select:focus-within {
 hr {
     min-width: 100%;
 }
+
+/* FOOTER */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    }
+    
+    .footer-item {
+        max-width: 40%;
+        text-align: center;
+    }
+    @media screen and (max-width:65rem) {
+        .footer-item {
+            max-width: 70%;
+            text-align: center;
+        }
+    }
+    
+    .footer-contactinfo {
+        margin: 0.5rem;
+        background-color: #b0e7e7;
+    }
+    
+    /* temporary logo for now? */
+    .logo-link-footer {
+        width: 4rem;
+        height: 4rem;
+        background-color: #b0e7e7;
+        border: solid;
+        border-radius: 5rem;
+        border-width: 1rem;
+        border-color: white;
+        font-size: 1.25rem;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin: 2rem;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    /* END OF FOOTER */
