@@ -571,7 +571,7 @@ formblock {
     /*https://www.w3schools.com/css/css_form.asp*/
 }
 
-/*----Testing--Tim--*/
+/*---- product detail part--Tim--*/
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -620,7 +620,7 @@ formblock {
 .product-selection select {
     margin-right: 1em;
     padding: 0.5em;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .product-quantity {
@@ -654,4 +654,105 @@ select:focus-within {
 }
 
 
-/*End of testing*/
+/* ----------review section part--------- */
+
+
+
+.comment-section display: flex;
+flex-direction: column;
+gap: 20px;
+margin-top: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.summary-rating {
+    display: flex;
+    display:block;
+    align-items: center;
+    float:right;
+    margin: 1em;
+}
+
+.rating {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.stars {
+    color: #FFD700;
+}
+
+.stars i {
+    margin-right: 5px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+
+}
+
+.review {
+    display: flex;
+    gap: 1.5em;
+    border-bottom: 1px dashed #ccc;
+}
+
+.user-icon img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+
+}
+
+.review-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.review p {
+   margin-top:0.5em;
+}
+
+
+
+
+
+.form-bg {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+}
+
+.form-label {
+    color: #7b1616;
+    padding-right: 1em;
+
+
+}
+
+hr {
+    min-width: 100%;
+}
