@@ -4,7 +4,7 @@
 
 /* HEADER & NAVIGATION */
 header {
-    background-color: whitesmoke;
+    background-color: #7b1616;
     padding: 2rem;
 }
 
@@ -19,16 +19,16 @@ header {
     width: 6rem;
     height: 6rem;
     border-radius: 5rem;
-    background-color: rgb(190, 190, 190);
+    background-color: #b0e7e7;
     margin-top: -0.5rem;
     font-size: 1rem;
-    color: #7b1616;
+    color: black;
     text-align: center;
 }
 
 .nav-decoration {
     border: solid;
-    border-color: #b0e7e7;
+    border-color: whitesmoke;
     border-width: 0.25rem;
     border-radius: 2.5rem;
     display: flex;
@@ -42,20 +42,20 @@ header {
     font-size: 1.3rem;
     padding: 1.5rem 2rem;
     border-radius: 0.75rem;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 a.nav-link:hover, a.nav-link:focus {
-    color: white;
-    background: #b0e7e7;
+    color: black;
+    background: whitesmoke;
 }
 
 @media screen and (max-width:65rem) {
     .nav-decoration {
         border: solid;
-        border-color: #b0e7e7;
+        border-color: whitesmoke;
         border-width: 0.25rem;
         border-radius: 2.5rem;
         display: flex;
