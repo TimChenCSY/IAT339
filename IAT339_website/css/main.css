@@ -1,12 +1,13 @@
-body {
-    padding: 1.5rem 2rem;
-}
-
 .fontstyle-main {
     font-family: "poiret one", sans-serif;
 }
 
 /* HEADER & NAVIGATION */
+header {
+    background-color: whitesmoke;
+    padding: 2rem;
+}
+
 .logo-link {
     position: fixed;
     margin-left: 11rem;
@@ -18,7 +19,7 @@ body {
     width: 6rem;
     height: 6rem;
     border-radius: 5rem;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(190, 190, 190);
     margin-top: -0.5rem;
     font-size: 1rem;
     color: #7b1616;
@@ -61,7 +62,7 @@ a.nav-link:hover, a.nav-link:focus {
         flex-wrap: wrap;
         justify-content: center;
         /* reduce margin area when screen gets smaller */
-        margin: 0rem 4rem;
+        margin: 0.5rem 4rem;
     }
     .logo-link {
         position: fixed;
