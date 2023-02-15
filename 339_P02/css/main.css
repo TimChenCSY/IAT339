@@ -115,6 +115,23 @@ nav {
 
 }
 
+.submitreview {
+
+    background-color: #b0e7e7;
+    border-style: solid;
+    border-color: transparent;
+    padding: 1rem;
+    border-width: thin;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+
+}
+
+
+
 
 .submit:hover,
 .submit:focus {
@@ -619,8 +636,6 @@ formblock {
 
 .product-selection select {
     margin-right: 1em;
-    padding: 0.5em;
-    font-size: 16px;
 }
 
 .product-quantity {
@@ -633,13 +648,14 @@ select {
 
 
     border: 1px solid #7b1616;
-    ;
+    padding: 0.5em;
+    font-size: 1em;
     border-radius: 0.25em;
-    padding: 0.25em 0.5em;
-    font-size: 1.25rem;
+    padding: 0.5em;
     cursor: pointer;
     line-height: 1.1;
     background-color: whitesmoke;
+    color: #7b1616;
 
 }
 
@@ -658,44 +674,43 @@ select:focus-within {
 
 
 
-.comment-section display: flex;
-flex-direction: column;
-gap: 20px;
-margin-top: 30px;
+.comment-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*
+    display:flex;
+    flex-direction:column;
+   align-items: flex-end;
+*/
 }
 
-.section-header h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
+.comment-section h2 {
+    display: block;
+    flex-basis: 100%;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 .summary-rating {
     display: flex;
-    display:block;
+    display: block;
     align-items: center;
-    float:right;
+    float: right;
     margin: 1em;
 }
 
-.rating {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-}
+.rating {}
 
 .stars {
     color: #FFD700;
+    font-size: 1.5em;
 }
 
 .stars i {
-    margin-right: 5px;
+    margin-right: 0.3em;
 }
 
 .review-list {
@@ -720,25 +735,16 @@ margin-top: 30px;
 }
 
 .review-details h3 {
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: bold;
     margin: 0;
+    margin-bottom: 0.3em;
 }
-
-
-
-
-
-
 
 
 .review p {
-   margin-top:0.5em;
+    margin-top: 0.5em;
 }
-
-
-
-
 
 .form-bg {
     background-color: white;
@@ -749,7 +755,6 @@ margin-top: 30px;
 .form-label {
     color: #7b1616;
     padding-right: 1em;
-
 
 }
 
