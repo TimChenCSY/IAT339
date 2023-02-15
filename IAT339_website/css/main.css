@@ -8,22 +8,24 @@ header {
     padding: 2rem;
 }
 
-.logo-link {
-    position: fixed;
-    margin-left: 11rem;
-}
-
 /* temporary logo for header. NOTE logo will eventually be an image as a link? */
-.circle {
-    position: fixed;
+.logo-link {
+    position: absolute;
+    margin-left: 11rem;
+
     width: 6rem;
     height: 6rem;
     border-radius: 5rem;
     background-color: #b0e7e7;
     margin-top: -0.5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: black;
     text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-decoration {
@@ -65,8 +67,69 @@ a.nav-link:hover, a.nav-link:focus {
         margin: 0.5rem 4rem;
     }
     .logo-link {
-        position: fixed;
+        position: absolute;
         margin-left: 0rem;
+
+        width: 6rem;
+        height: 6rem;
+        border-radius: 5rem;
+        background-color: #b0e7e7;
+        margin-top: -0.5rem;
+        font-size: 1.25rem;
+        color: black;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 /* END OF HEADER & NAVIGATION */
+
+
+
+
+
+/* temporary spacer between header and footer; can be deleted once body content is implemented */
+.spacer {
+    margin: 55rem;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: whitesmoke;
+}
+
+.footer-item {
+}
+
+/* temporary logo for footer. NOTE logo will eventually be an image as a link? */
+.logo-link-footer {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    background-color: #b0e7e7;
+    font-size: 1.25rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* END OF FOOTER */
