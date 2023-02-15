@@ -1,9 +1,103 @@
 body {
     font-family: "poiret one", tahoma, sans-serif;
+    margin: 0;
+}
+
+.sidePadding {
     padding: 1rem 3rem;
 }
 
-/* HEADER+NAV */
+/* HEADER & NAVIGATION */
+.header-color {
+    background-color: #7b1616;
+    padding: 2rem;
+}
+
+/* temporary logo for now? */
+.logo-link {
+    position: absolute;
+    margin-left: 11rem;
+
+    width: 4rem;
+    height: 4rem;
+    background-color: #b0e7e7;
+    border: solid;
+    border-radius: 5rem;
+    border-width: 1rem;
+    border-color: white;
+    margin-top: -0.5rem;
+    font-size: 1.25rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-decoration {
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 0.25rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 15rem;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+    color: whitesmoke;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a.nav-link:hover, a.nav-link:focus {
+    color: black;
+    background: whitesmoke;
+}
+
+@media screen and (max-width:65rem) {
+    .nav-decoration {
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 0.25rem;
+        border-radius: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* reduce margin area when screen gets smaller */
+        margin: 0.5rem 4rem;
+    }
+    .logo-link {
+        position: absolute;
+        margin-left: 0rem;
+
+        width: 4rem;
+        height: 4rem;
+        background-color: #b0e7e7;
+        border: solid;
+        border-radius: 5rem;
+        border-width: 1rem;
+        border-color: white;
+        margin-top: -0.5rem;
+        font-size: 1.25rem;
+        color: black;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* END OF HEADER & NAVIGATION */
+
+/* ORIGINAL HEADER+NAV */
 header {
     padding: 5rem;
     color: black;
@@ -764,6 +858,7 @@ hr {
 
 /* FOOTER */
 .footer-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
