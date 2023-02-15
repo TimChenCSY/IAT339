@@ -264,6 +264,8 @@ code {
     background-color: transparent;
 }
 
+
+
 @media screen and (max-width:60rem) {
     body {
         font-family: "poiret one", tahoma, sans-serif;
@@ -336,15 +338,22 @@ code {
 
     .product-details {
         max-width: 100%;
-        position: relative;
-        align-self: flex-start;
+
     }
 
     /*end of @media screen and (max-width:60rem)*/
 }
 
 
+@media screen and (min-width:60rem) {
+    .product-details {
+        max-width: 100%;
+        position: sticky;
+        top: 15em;
 
+    }
+
+}
 
 /* PRODUCT LISTING (COFFEE SHOP VARIATION) */
 .product-list {
@@ -592,8 +601,7 @@ formblock {
 .product-details {
     flex-basis: 30%;
     max-width: 100%;
-    position: sticky;
-    top: 10em;
+
     box-sizing: inherit;
     margin-top: 10%;
     margin-left: 1px;
