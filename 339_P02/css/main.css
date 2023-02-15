@@ -208,6 +208,26 @@ nav {
     transition-duration: 0.2s;
 
 }
+.detail {
+    
+     margin-top: 2rem;
+    background-color: #b0e7e7;
+    border-style: solid;
+    border-color: transparent;
+    border-width: thin;
+    border-radius: 0.5rem;
+    color: white;
+     padding: 0rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    
+}
+.detail[open]{
+    padding:1rem;
+    padding-top: 0;
+}
+
 
 .submitreview {
 
@@ -451,6 +471,7 @@ code {
         max-width: 100%;
 
     }
+
 
     /*end of @media screen and (max-width:60rem)*/
 }
@@ -904,3 +925,7 @@ hr {
     
     
     /* END OF FOOTER */
+summary {
+    padding: 1em;
+}
+
