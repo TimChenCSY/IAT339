@@ -97,45 +97,6 @@ a.nav-link:hover, a.nav-link:focus {
 }
 /* END OF HEADER & NAVIGATION */
 
-/* ORIGINAL HEADER+NAV */
-header {
-    padding: 5rem;
-    color: black;
-    /*Value found from https://www.w3schools.com/css/css_border.asp */
-    border-left: groove;
-    border-color: #b0e7e7;
-    border-width: 0.5rem;
-}
-
-nav {
-    display: flex;
-    /* Line of code retrieved from: https://stackoverflow.com/questions/63136888/css-navbar-how-to-evenly-space-out-elements */
-    justify-content: center;
-    border: solid;
-    border-width: 0.2rem;
-    border-radius: 1.5rem;
-    border-color: #b0e7e7;
-    flex-wrap: wrap;
-}
-
-.nav-button {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    font-size: 1.1rem;
-    padding: 1rem 0.5rem;
-    text-decoration: none;
-    transition-duration: 0.1s;
-}
-
-.nav-button:hover,
-.nav-button:focus {
-    transition-property: background-color;
-    transition-duration: 0.25s;
-    background-color: #b0e7e7;
-    border-radius: 1.5rem;
-}
-
 /* FLEXBOX */
 /* Code retrieved from in class lecture week 3 */
 .container {
@@ -400,7 +361,7 @@ code {
 @media screen and (max-width:60rem) {
     body {
         font-family: "poiret one", tahoma, sans-serif;
-        padding: 1rem 0.5rem;
+        margin: 0;
     }
 
     .item {
@@ -648,8 +609,8 @@ img.imagelink-productbrief {
 }
 
 .shippingaligntext {
-    float: right;
-    margin-right: 50%;
+    display: absolute;
+    margin: 0rem 50%;
 }
 
 .formbody {
