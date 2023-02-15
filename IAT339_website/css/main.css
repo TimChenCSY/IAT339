@@ -1,7 +1,71 @@
 body {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .fontstyle-main {
     font-family: "poiret one", sans-serif;
 }
+
+/* HEADER & NAVIGATION */
+.logo-link {
+    position: fixed;
+    margin-left: 11rem;
+}
+
+/* temporary logo for header. NOTE logo will eventually be an image as a link? */
+.circle {
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    background-color: rgb(225, 225, 225);
+    margin-top: -0.5rem;
+    font-size: 1rem;
+    color: #7b1616;
+    text-align: center;
+}
+
+.nav-decoration {
+    border: solid;
+    border-color: #b0e7e7;
+    border-width: 0.25rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 15rem;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a.nav-link:hover, a.nav-link:focus {
+    color: white;
+    background: #b0e7e7;
+}
+
+@media screen and (max-width:65rem) {
+    .nav-decoration {
+        border: solid;
+        border-color: #b0e7e7;
+        border-width: 0.25rem;
+        border-radius: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* reduce margin area when screen gets smaller */
+        margin: 0rem 4rem;
+    }
+    .logo-link {
+        position: fixed;
+        margin-left: 0rem;
+    }
+}
+/* END OF HEADER & NAVIGATION */
