@@ -7,8 +7,13 @@ body {
     padding: 1rem 3rem;
 }
 
+.spacer {
+/* add space in between items */
+    margin: 2rem;
+}
+
 /* HEADER & NAVIGATION */
-.header-color {
+header {
     background-color: #7b1616;
     padding: 2rem;
 }
@@ -876,7 +881,7 @@ hr {
         color: black;
         text-align: center;
         text-decoration: none;
-        margin: 2rem;
+        margin: 3rem;
     
         display: flex;
         align-items: center;
