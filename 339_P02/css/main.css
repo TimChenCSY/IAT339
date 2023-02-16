@@ -102,13 +102,38 @@ a.nav-link:hover, a.nav-link:focus {
 }
 /* END OF HEADER & NAVIGATION */
 
+/* INDEX PAGE CONTENT */
+.index-item {
+    max-width: 20rem;
+    padding: 1.5rem 1rem;
+    flex: 1;
+}
+
+img.image-index {
+    border-radius: 2rem;
+    max-width: 100%;
+    position: relative;
+    height: 50%;
+    /* Code from https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+    object-fit: cover;
+}
+
+@media screen and (max-width:30rem) {
+    .index-item {
+        padding: 0.5rem;
+        flex: 1;
+        min-width: 100%;
+    }
+}
+
+/* END OF INDEX PAGE CONTENT */
+
 /* FLEXBOX */
 /* Code retrieved from in class lecture week 3 */
 .container {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* Code retrieved from https://www.w3schools.com/cssref/css3_pr_flex-wrap.php */
     flex-wrap: wrap;
 }
 
@@ -262,7 +287,7 @@ h2 {
     color: white;
     padding-left: 5rem;
     padding-top: 2.5rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
     background-color: #7b1616;
     border-radius: 2rem;
 }
@@ -476,6 +501,8 @@ img.imagelink-product {
     max-width: 100%;
     position: relative;
     max-height: 70%;
+    height: 70%;
+    object-fit: cover;
 }
 
 .product-title {
@@ -885,10 +912,8 @@ hr {
         align-items: center;
         justify-content: center;
     }
-    
-    
-    
     /* END OF FOOTER */
+
 summary {
     padding: 1em;
 }
