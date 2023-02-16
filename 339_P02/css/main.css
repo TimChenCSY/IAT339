@@ -286,7 +286,7 @@ p {
 
     color: #7b1616;
     word-wrap: break-word;
-    text-decoration: underline;
+    text-decoration: none;
     transition-duration: 0.1s;
 
 }
@@ -297,9 +297,7 @@ p {
     transition-property: color;
     transition-duration: 0.1s;
     font-size: 101%;
-    text-decoration: none;
-    color: #b0e7e7;
-    background: #7b1616;
+    text-decoration: underline;
 
 }
 
