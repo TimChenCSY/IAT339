@@ -14,24 +14,23 @@ body {
 
 /* HEADER & NAVIGATION */
 header {
-    background-color: #7b1616;
     padding: 2rem;
 }
 
 /* temporary logo for now? */
 .logo-link {
     position: absolute;
-    margin-left: 11rem;
+    margin-left: 9.5rem;
 
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background-color: #b0e7e7;
     border: solid;
-    border-radius: 5rem;
-    border-width: 1rem;
-    border-color: white;
-    margin-top: -0.5rem;
-    font-size: 1.25rem;
+    border-radius: 10rem;
+    border-width: 1.25rem;
+    border-color: whitesmoke;
+    margin-top: -1.25rem;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -43,7 +42,7 @@ header {
 
 .nav-decoration {
     border: solid;
-    border-color: whitesmoke;
+    border-color: #7b1616;
     border-width: 0.25rem;
     border-radius: 2.5rem;
     display: flex;
@@ -57,20 +56,20 @@ header {
     font-size: 1.3rem;
     padding: 1.5rem 2rem;
     border-radius: 0.75rem;
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 a.nav-link:hover, a.nav-link:focus {
-    color: black;
-    background: whitesmoke;
+    color: white;
+    background: #7b1616;
 }
 
 @media screen and (max-width:65rem) {
     .nav-decoration {
         border: solid;
-        border-color: whitesmoke;
+        border-color: #7b1616;
         border-width: 0.25rem;
         border-radius: 2.5rem;
         display: flex;
@@ -89,7 +88,7 @@ a.nav-link:hover, a.nav-link:focus {
         border: solid;
         border-radius: 5rem;
         border-width: 1rem;
-        border-color: white;
+        border-color: whitesmoke;
         margin-top: -0.5rem;
         font-size: 1.25rem;
         color: black;
@@ -118,11 +117,29 @@ img.image-index {
     object-fit: cover;
 }
 
+.index-shape {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 3rem;
+    width: 40%;
+    height: 21rem;
+    background-color: #b0e7e7;
+    z-index: -1;
+}
+
 @media screen and (max-width:40rem) {
     .index-item {
         padding: 0.5rem;
         flex: 1;
         min-width: 100%;
+    }
+    .index-shape {
+        position: absolute;
+        height: 25rem;
+        width: 100%;
+        margin: 0;
+        background-color: #b0e7e7;
+        z-index: -1;
     }
 }
 
@@ -283,13 +300,13 @@ h1 {
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 2rem;
     color: white;
     padding-left: 5rem;
     padding-top: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
     background-color: #7b1616;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 h3 {
@@ -875,6 +892,7 @@ hr {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
+    margin-top: 5rem;
     }
     
     .footer-item {
@@ -917,4 +935,3 @@ margin: 1rem;
 summary {
     padding: 1em;
 }
-
