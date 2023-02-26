@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Candyshop</title>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet"> 
-  </head>
+    <link href="css/fonts.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <header>
-      <nav> 
-          <a class = logo-link href="index.html">candyshop</a>
-          <div class = nav-decoration>
-              <a class = nav-link href="product_listing.html">products</a>
-              <a class = nav-link href="index.html#updates">updates</a>
-              <a class = nav-link href="checkout.html">checkout</a>
-          </div>
-      </nav>
-  </header>
+        <nav>
+            <a class=logo-link href="index.html">candyshop</a>
+            <div class=nav-decoration>
+                <a class=nav-link href="product_listing.html">products</a>
+                <a class=nav-link href="index.html#updates">updates</a>
+                <a class=nav-link href="checkout.html">checkout</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class = "sidePadding">
+    <div class="sidePadding">
 
-<!--Price summary section-->
-  <div class="product-brief">
-      <div class=product-brief-block>
-          <a href="#imagelink"><img class=imagelink-productbrief src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
-      </div>
-      <div class=product-brief-block>
-          <h4 class=product-brief-title>Rainbow Lollipop</h4>
-          <p class=product-brief-price>$4.00</p>
-      </div>
+        <!--Price summary section-->
+        <div class="product-brief">
+            <div class=product-brief-block>
+                <a href="#imagelink"><img class=imagelink-productbrief src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+            </div>
+            <div class=product-brief-block>
+                <h4 class=product-brief-title>Rainbow Lollipop</h4>
+                <p class=product-brief-price>$4.00</p>
+            </div>
 
-      <div class=product-brief-block>
-          <p class=product-brief-count> <b> - 1 + </b>
-          <p>
-      </div>
+            <div class=product-brief-block>
+                <p class=product-brief-count> <b> - 1 + </b>
+                <p>
+            </div>
 
-  </div>
-  <div class="product-brief">
-      <div class=product-brief-block>
-          <a href="#imagelink"><img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"></a>
-      </div>
-      <div class=product-brief-block>
-          <h4 class=product-brief-title>Candy Cane (X2)</h4>
-          <p class=product-brief-price>$3.50</p>
-      </div>
+        </div>
+        <div class="product-brief">
+            <div class=product-brief-block>
+                <a href="#imagelink"><img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"></a>
+            </div>
+            <div class=product-brief-block>
+                <h4 class=product-brief-title>Candy Cane (X2)</h4>
+                <p class=product-brief-price>$3.50</p>
+            </div>
 
-      <div class=product-brief-block>
-          <p class=product-brief-count> <b> - 1 + </b>
-          <p>
-      </div>
+            <div class=product-brief-block>
+                <p class=product-brief-count> <b> - 1 + </b>
+                <p>
+            </div>
 
-  </div>
-  <div class=shippingaligntext>
-      <h4>Subtotal: 7.50$</h4>
-      <h4>Shipping: Free</h4>
-      <h3>Total: $7.50</h3>
-  </div>
+        </div>
+        <div class=shippingaligntext>
+            <h4>Subtotal: 7.50$</h4>
+            <h4>Shipping: Free</h4>
+            <h3>Total: $7.50</h3>
+        </div>
 
 
 
-<!-- Payment section(credit card info & shipping)-->
-<section class= seperatetop>
+        <!-- Payment section(credit card info & shipping)-->
+        <section class=seperatetop>
 
-<div class = "container">
-  <section class="listing-item-bg">
-    <form>
-        <h3>Credit Card Information</h3>
-        <input type = "radio" id = "CreditCard" name = "payment" value = "Credit Card">
-        <label for = "CreditCard">Credit Card</label>
-        <input type = "radio" id = "ApplePay" name = "payment" value = "Apple Pay">
-        <label for = "ApplePay">Apple Pay</label>
-        <input type = "radio" id = "Paypal" name = "payment" value = "Paypal">
-        <label for = "Paypal">Paypal</label>
+            <div class="container">
+                <section class="listing-item-bg">
+                    <form>
+                        <h3>Credit Card Information</h3>
+                        <input type="radio" id="CreditCard" name="payment" value="Credit Card">
+                        <label for="CreditCard">Credit Card</label>
+                        <input type="radio" id="ApplePay" name="payment" value="Apple Pay">
+                        <label for="ApplePay">Apple Pay</label>
 
-          <label class = "input-label">card number</label>
-          <input class = "input-box">
-          <label class = "input-label">expiration date (mm/yy)</label>
-          <input class = "input-box">
-          <label class = "input-label">cvv number</label>
-          <input class = "input-box">
-          <label class = "input-label">name on card</label>
-          <input class = "input-box">
-        </form>
-  </section>
+                        <input type="radio" id="Paypal" name="payment" value="Paypal">
+                        <label for="Paypal">Paypal</label>
+                        <br>
+                        <label class="input-label" for="cardnumber">card number</label>
+                        <input class="input-box" id="cardnumber" name="cardnumber">
+                        <label class="input-label" for="expdate">expiration date (mm/yy)</label>
+                        <input class="input-box" id="expdate" name="expdate">
+                        <label class="input-label" for="cvvnumber">cvv number</label>
+                        <input class="input-box" id="cvvnumber" name="cvvnumber">
+                        <label class="input-label" for="nameoncard">name on card</label>
+                        <input class="input-box" id="nameoncard" name="nameoncard">
+                    </form>
+                </section>
 
-  <section class="listing-item-bg">
-    <form>
-      <h3>Shipping Information</h3>
-        <label class = "input-label">full name</label>
-        <input class = "input-box">
-        <label class = "input-label">email</label>
-        <input class = "input-box">
-        <label class = "input-label">shipping address</label>
-        <input class = "input-box">
-        <label class = "input-label">city</label>
-        <input class = "input-box">
-        <label class = "input-label">postal code</label>
-        <input class = "input-box">
-      </form>
-  </section>
-  <input class = "submit shippingaligntext" type="submit" value="ORDER">
-</div>
-</section>
+                <section class="listing-item-bg">
+                    <form>
+                        <h3>Shipping Information</h3>
+                        <label class="input-label" for="shippingfullname">full name</label>
+                        <input class="input-box" id="shippingfullname" name="shippingfullname">
+                        <label class="input-label" for="shippingemail">email</label>
+                        <input class="input-box" id="shippingemail" name="shippingemail">
+                        <label class="input-label" for="shippingaddress">shipping address</label>
+                        <input class="input-box" id="shippingaddress" name="shippingaddress">
+                        <label class="input-label" for="city">city</label>
+                        <input class="input-box" id="city" name="city">
+                        <label class="input-label" for="postalcode">postal code</label>
+                        <input class="input-box" id="postalcode" name="postalcode">
+                    </form>
+                </section>
+                <input class="submit shippingaligntext" type="submit" value="ORDER">
+            </div>
+        </section>
 
-</div>
+    </div>
 
-<section class = footer-container>
-  <a class = "logo-link-footer footer-item" href="index.html">candyshop</a>
-  <h3 class = footer-item>about our company</h3>
-  <p class = footer-item>*Candyshop* is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>  <div class = footer-item>
-    <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class = footer-contactinfo src = "img/social-media-icons/facebook.png" alt = "Facebook icons created by Pixel perfect - Flaticon"></a>
-    <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class = footer-contactinfo src = "img/social-media-icons/twitter.png" alt = "Twitter icons created by Pixel perfect - Flaticon"></a>
-    <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class = footer-contactinfo src = "img/social-media-icons/instagram.png" alt = "Instagram icons created by Pixel perfect - Flaticon"></a>
-  </div>
-  <div class = spacer></div>
-  <h3 class = footer-item>resources</h3>
-  <a class = "footer-item text-link" href="styleguide.html">Brand Style Guide</a>
-  <a class = "footer-item text-link" href="styleguide.html#citations">Citations</a>
-  <a class = "footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
-  <div class = spacer></div>
-</section>
-  </body>
+    <section class=footer-container>
+        <a class="logo-link-footer footer-item" href="index.html">candyshop</a>
+        <h3 class=footer-item>about our company</h3>
+        <p class=footer-item>*Candyshop* is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>
+        <div class=footer-item>
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class=footer-contactinfo src="img/social-media-icons/facebook.png" alt="Facebook icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class=footer-contactinfo src="img/social-media-icons/twitter.png" alt="Twitter icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class=footer-contactinfo src="img/social-media-icons/instagram.png" alt="Instagram icons created by Pixel perfect - Flaticon"></a>
+        </div>
+        <div class=spacer></div>
+        <h3 class=footer-item>resources</h3>
+        <a class="footer-item text-link" href="styleguide.html">Brand Style Guide</a>
+        <a class="footer-item text-link" href="styleguide.html#citations">Citations</a>
+        <a class="footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
+        <div class=spacer></div>
+    </section>
+</body>
 
 </html>
