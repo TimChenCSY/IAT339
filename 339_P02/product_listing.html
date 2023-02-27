@@ -11,112 +11,113 @@
 
 <body>
     <header>
-        <nav> 
-            <a class = logo-link href="index.html">candyshop</a>
-            <div class = nav-decoration>
-                <a class = nav-link href="product_listing.html">products</a>
-                <a class = nav-link href="index.html#updates">updates</a>
-                <a class = nav-link href="checkout.html">checkout</a>
+        <nav>
+            <a class=logo-link href="index.html">candyshop</a>
+            <div class=nav-decoration>
+                <a class=nav-link href="product_listing.html">products</a>
+                <a class=nav-link href="index.html#updates">updates</a>
+                <a class=nav-link href="checkout.html">checkout</a>
             </div>
         </nav>
     </header>
 
-    <div class = "sidePadding">
+    <div class="sidePadding">
 
+        <h1> Our Best Candys</h1>
+        <div id=shop-filter-section>
+            <form>
+                <h3>Sort:</h3>
+                <label for="price">Price</label>
+                <input type="radio" id="price" name="sortbuttons">
+                <label for="A-Z">A-Z</label>
+                <input type="radio" id="A-Z" name="sortbuttons">
+                <label for="New">New</label>
+                <input type="radio" id="New" name="sortbuttons">
 
-    <div id=shop-filter-section>
-        <form>
-            <h3>Sort:</h3>
-            <label for="price">Price</label>
-            <input type="radio" id="price" name="sortbuttons">
-            <label for="A-Z">A-Z</label>
-            <input type="radio" id="A-Z" name="sortbuttons">
-            <label for="New">New</label>
-            <input type="radio" id="New" name="sortbuttons">
+                <h3>Filter:</h3>
+                <label for="Sweet">Sweet</label>
+                <input type="checkbox" id="Sweet" name="filterbuttons">
+                <label for="Savoury">Savoury</label>
+                <input type="checkbox" id="Savooury" name="filterbuttons">
+                <label for="Specials">Specials</label>
+                <input type="checkbox" id="Specials" name="filterbuttons">
 
-            <h3>Filter:</h3>
-            <label for="Sweet">Sweet</label>
-            <input type="checkbox" id="Sweet" name="filterbuttons">
-            <label for="Savoury">Savoury</label>
-            <input type="checkbox" id="Savooury" name="filterbuttons">
-            <label for="Specials">Specials</label>
-            <input type="checkbox" id="Specials" name="filterbuttons">
+            </form>
+        </div>
 
-        </form>
-    </div>
+        <div name=shop-item-section>
+            <!--https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg-->
+            <div class=product-list>
+                <div class="product-card">
+                    <a href="#imagelink"><img class=imagelink-product src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+                    <h4 class=product-title>Rainbow Lollipop</h4>
+                    <p class=product-price>$4.00</p>
+                    <div class="product-overlay">
+                        <a class="product-jump" ; href="productdetail_RainbowLolipop.html"></a>
+                        <p class="product-text">Assorted</p>
+                        <p class="product-text">Fruit</p>
+                        <p class="product-text">Flavour</p>
+                    </div>
 
-    <div name=shop-item-section>
-        <!--https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg-->
-        <div class=product-list>
-            <div class="product-card">
-                <a href="#imagelink"><img class=imagelink-product src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
-                <h4 class=product-title>Rainbow Lollipop</h4>
-                <p class=product-price>$4.00</p>
-                <div class="product-overlay">
-                    <a class="product-jump" ; href="productdetail_RainbowLolipop.html"></a>
-                    <p class="product-text">Assorted</p>
-                    <p class="product-text">Fruit</p>
-                    <p class="product-text">Flavour</p>
                 </div>
 
-            </div>
+                <div class="product-card">
+                    <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
+                    <h4 class=product-title>Candy Cane (X2)</h4>
+                    <p class=product-price>$3.50</p>
+                    <div class="product-overlay">
+                        <a class="product-jump" ; href="productdetail_Candycane.html"></a>
+                        <p class="product-text">Holiday Special</p>
+                        <p class="product-text">Refreshing</p>
+                        <p class="product-text">Peppermint</p>
+                    </div>
 
-            <div class="product-card">
-                <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
-                <h4 class=product-title>Candy Cane (X2)</h4>
-                <p class=product-price>$3.50</p>
-                <div class="product-overlay">
-                   <a class="product-jump" ; href="productdetail_Candycane.html"></a>
-                    <p class="product-text">Holiday Special</p>
-                    <p class="product-text">Refreshing</p>
-                    <p class="product-text">Peppermint</p>
                 </div>
 
-            </div>
+                <div class="product-card">
+                    <a href="#imagelink"><img class=imagelink-product src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+                    <h4 class=product-title>Rainbow Lollipop</h4>
+                    <p class=product-price>$4.00</p>
+                    <div class="product-overlay">
+                        <a class="product-jump" ; href="productdetail_RainbowLolipop.html"></a>
+                        <p class="product-text">Assorted</p>
+                        <p class="product-text">Fruit</p>
+                        <p class="product-text">Flavour</p>
+                    </div>
 
-            <div class="product-card">
-                <a href="#imagelink"><img class=imagelink-product src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
-                <h4 class=product-title>Rainbow Lollipop</h4>
-                <p class=product-price>$4.00</p>
-                <div class="product-overlay">
-                    <a class="product-jump" ; href="productdetail_RainbowLolipop.html"></a>
-                    <p class="product-text">Assorted</p>
-                    <p class="product-text">Fruit</p>
-                    <p class="product-text">Flavour</p>
                 </div>
 
-            </div>
-
-            <div class="product-card">
-                <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
-                <h4 class=product-title>Candy Cane (X2)</h4>
-                <p class=product-price>$3.50</p>
-                <div class="product-overlay">
-                    <a class="product-jump" ; href="productdetail_Candycane.html"></a>
-                    <p class="product-text">Holiday Special</p>
-                    <p class="product-text">Refreshing</p>
-                    <p class="product-text">Peppermint</p>
+                <div class="product-card">
+                    <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
+                    <h4 class=product-title>Candy Cane (X2)</h4>
+                    <p class=product-price>$3.50</p>
+                    <div class="product-overlay">
+                        <a class="product-jump" ; href="productdetail_Candycane.html"></a>
+                        <p class="product-text">Holiday Special</p>
+                        <p class="product-text">Refreshing</p>
+                        <p class="product-text">Peppermint</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
 
-    <section class = footer-container>
-        <a class = "logo-link-footer footer-item" href="index.html">candyshop</a>
-        <h3 class = footer-item>about our company</h3>
-        <p class = footer-item>*Candyshop* is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>        <div class = footer-item>
-            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class = footer-contactinfo src = "img/social-media-icons/facebook.png" alt = "Facebook icons created by Pixel perfect - Flaticon"></a>
-            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class = footer-contactinfo src = "img/social-media-icons/twitter.png" alt = "Twitter icons created by Pixel perfect - Flaticon"></a>
-            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class = footer-contactinfo src = "img/social-media-icons/instagram.png" alt = "Instagram icons created by Pixel perfect - Flaticon"></a>
+    <section class=footer-container>
+        <a class="logo-link-footer footer-item" href="index.html">candyshop</a>
+        <h3 class=footer-item>about our company</h3>
+        <p class=footer-item>*Candyshop* is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>
+        <div class=footer-item>
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class=footer-contactinfo src="img/social-media-icons/facebook.png" alt="Facebook icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class=footer-contactinfo src="img/social-media-icons/twitter.png" alt="Twitter icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class=footer-contactinfo src="img/social-media-icons/instagram.png" alt="Instagram icons created by Pixel perfect - Flaticon"></a>
         </div>
-        <div class = spacer></div>
-        <h3 class = footer-item>resources</h3>
-        <a class = "footer-item text-link" href="styleguide.html">Brand Style Guide</a>
-        <a class = "footer-item text-link" href="styleguide.html#citations">Citations</a>
-        <a class = "footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
-        <div class = spacer></div>
+        <div class=spacer></div>
+        <h3 class=footer-item>resources</h3>
+        <a class="footer-item text-link" href="styleguide.html">Brand Style Guide</a>
+        <a class="footer-item text-link" href="styleguide.html#citations">Citations</a>
+        <a class="footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
+        <div class=spacer></div>
     </section>
 </body>
 
