@@ -30,7 +30,7 @@ header {
     border-width: 1.25rem;
     border-color: whitesmoke;
     margin-top: -1.25rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -527,7 +527,7 @@ code {
 
     background-color: whitesmoke;
      max-width: 70%;
-        align-self: ;
+        /* align-self: ; */
     }
     
      .shippingaligntext {
@@ -848,13 +848,11 @@ select:focus-within {
     flex-direction: column;
 }
 
-.section-header {
-    /*
+/* .section-header {
     display:flex;
     flex-direction:column;
    align-items: flex-end;
-*/
-}
+} */
 
 .comment-section h2 {
     display: block;
@@ -871,7 +869,7 @@ select:focus-within {
     margin: 1em;
 }
 
-.rating {}
+/* .rating {} */
 
 .stars {
     color: #FFD700;
@@ -967,7 +965,7 @@ hr {
     border-radius: 5rem;
     border-width: 1rem;
     border-color: white;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: black;
     text-align: center;
     text-decoration: none;
