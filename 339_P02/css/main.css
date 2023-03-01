@@ -394,6 +394,9 @@ code {
     border-radius: 0.5rem;
     /* code from lecture 3 materials */
     display: flex;
+    width: 100%;
+    min-width: 5rem;
+    max-width:10rem;
 }
 
 .input-label {
@@ -801,6 +804,14 @@ formblock {
     display: flex;
     align-items: center;
 
+}
+
+@media screen and (max-width:60rem) {
+    .product-selection {
+    display: flex;
+    align-items: center;
+        flex-wrap: wrap;
+}
 }
 
 .product-selection select {
