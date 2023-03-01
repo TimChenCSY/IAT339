@@ -570,6 +570,7 @@ img.imagelink-product {
     position: relative;
     max-height: 70%;
     height: 70%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -655,11 +656,11 @@ img.imagelink-productbrief {
     max-width: 100%;
     max-height: 100%;
     min-width: 12em;
-    height: 100%;
-    width: inherit;
-    display: inline-flex;
     background-color: whitesmoke;
     flex-basis: 1;
+    object-fit: cover;
+
+    
 }
 
 .product-brief {
@@ -671,7 +672,6 @@ img.imagelink-productbrief {
     max-height: 10em;
     align-self: center;
    margin:0.5rem;
-   
 }
 
 .product-brief-title {
