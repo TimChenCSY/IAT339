@@ -69,16 +69,34 @@ a.nav-link:focus {
 
 @media screen and (max-width:65rem) {
     .nav-decoration {
-        border: solid;
-        border-color: #7b1616;
-        border-width: 0.25rem;
-        border-radius: 2.5rem;
-        display: flex;
+        border: none;
+        display: inline-block;
         flex-wrap: wrap;
-        justify-content: center;
-        /* reduce margin area when screen gets smaller */
-        margin: 0.5rem 4rem;
+
+        margin: 0.5rem 0.5rem;
+        margin-left: 30%;
     }
+
+    header {
+        padding: 2rem;
+        background-color: #7b1616;
+    }
+
+    .nav-link {
+        display: inline-block;
+        font-size: 1.3rem;
+        padding: 1.5rem 2rem;
+        border-radius: 0.75rem;
+        color: white;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+
+    a.nav-link:hover,
+a.nav-link:focus {
+    color: black;
+    background: whitesmoke;
+}
 
     .logo-link {
         position: absolute;
@@ -99,6 +117,17 @@ a.nav-link:focus {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:25rem) {
+    .nav-decoration {
+        border: none;
+        display: inline-block;
+        flex-wrap: wrap;
+
+        margin: 0.5rem 0.5rem;
+        margin-left: 50%;
     }
 }
 
