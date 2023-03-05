@@ -43,7 +43,7 @@
             </ul>
 
             <div class="product-selection">
-                <select>
+                <select class = input-box>
                     <option>Classic</option>
                     <option>Fruit Cereal</option>
                     <option>Chocolate peppermint</option>
@@ -52,17 +52,19 @@
                 </select>
                 <div class="product-quantity">
                     <label class="input-label" for="quantity">Quantity:</label>
-                    <input class="input-box" ; type="number" id="quantity" name="quantity">
+                    <input class="input-box-quantity" ; type="number" id="quantity" name="quantity">
                 </div>
             </div>
             <button class="submit addtocart">Add to Cart</button>
         </div>
     </section>
 
+    <div class = productDetail-spacer></div>
+
 
     <section class="comment-section">
         <div class="section-header">
-            <h2>Product Reviews</h2>
+            <h2>reviews</h2>
 
             <div class="summary-rating">
                 <span class="rating">4.5</span>
@@ -127,7 +129,7 @@
 
                     <div class="form-bg">
                         <label class="form-label" for="rating">Rating:</label>
-                        <select id="rating" name="rating" required>
+                        <select class = input-box id="rating" name="rating" required>
                             <option value="" selected disabled>Select a rating</option>
                             <option value="5">5 stars</option>
                             <option value="4">4 stars</option>

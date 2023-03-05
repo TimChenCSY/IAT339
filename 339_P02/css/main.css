@@ -4,12 +4,28 @@ body {
 }
 
 .sidePadding {
-    padding: 1rem 3rem;
+    padding: 1rem 10rem;
+}
+
+@media screen and (max-width:65rem) {
+    .sidePadding {
+        padding: 1rem 3rem;
+    }
 }
 
 .spacer {
     /* add space in between items */
     margin: 2rem;
+}
+
+.productDetail-spacer {
+    /* add space in between items */
+    margin: 6rem;
+}
+
+.noWrapRadio > span {
+    /* Code referenced from: https://stackoverflow.com/questions/6714414/keep-radio-buttons-with-their-labels-on-line-breaks */
+    white-space: nowrap;
 }
 
 /* HEADER & NAVIGATION */
@@ -140,6 +156,10 @@ a.nav-link:focus {
     flex: 1;
 }
 
+.index-title {
+    max-width: 80%;
+}
+
 img.image-index {
     border-radius: 2rem;
     position: relative;
@@ -238,11 +258,11 @@ img.image-index {
 
 .submit {
     margin-top: 2rem;
-    background-color: #b0e7e7;
+    background-color: #7b1616;
     border-style: solid;
+    border-width: 0.2rem;
     border-color: transparent;
     padding: 1rem;
-    border-width: thin;
     border-radius: 0.5rem;
     color: white;
     text-decoration: none;
@@ -275,18 +295,24 @@ text-align-last: center;
 
 
 .submitreview {
-
     background-color: #b0e7e7;
     border-style: solid;
     border-color: transparent;
-    padding: 1rem;
-    border-width: thin;
+    padding: 1rem 2.5rem;
+    /* margin-left: 40%; */
+    border-width: 0.15rem;
     border-radius: 0.5rem;
-    color: white;
+    color: black;
     text-decoration: none;
     box-sizing: border-box;
     transition-duration: 0.2s;
+    width: 100%;
+    height: 5rem;
+}
 
+.submitreview:hover, .submitreview:focus {
+    transition-duration: 0.75s;
+    border-color: #7b1616;
 }
 
 
@@ -294,10 +320,10 @@ text-align-last: center;
 
 .submit:hover,
 .submit:focus {
-    background-color: rgba(123, 231, 231, 50%);
+    background-color: whitesmoke;
     transition-duration: 0.5s;
     color: #7b1616;
-    border-width: thin;
+    border-width: 0.2rem;
     border-style: solid;
     border-color: #7b1616;
     transform: scale(103%);
@@ -333,7 +359,7 @@ text-align-last: center;
 
 h1 {
     font-size: 240%;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 h2 {
@@ -414,18 +440,31 @@ code {
 
 
 .input-box {
-    /* Code references https://w3bits.com/css-floating-labels/#:~:text=With%20having%20only%20CSS%20in%20mind%20for%20such,with%20the%20adjacent%20element%20selector%20in%20CSS%20%28%2B%29 & https://learn.shayhowe.com/html-css/building-forms/ */
     border-width: 0;
     outline: 0;
-    background-color: #b0e7e7;
+    background-color: transparent;
     border: 0.13rem solid #b0e7e7;
-    /* Code retrieved from https://www.w3schools.com/css//css3_borders.asp */
-    border-radius: 0.5rem;
-    /* code from lecture 3 materials */
+    border-radius: 0.25rem;
     display: flex;
-    width: 100%;
-    min-width: 5rem;
-    max-width:10rem;
+    width: 60%;
+    min-width: 2rem;
+    color: black;
+    font-size: 80%;
+    height: 2rem;
+}
+
+.input-box-quantity {
+    border-width: 0;
+    outline: 0;
+    background-color: white;
+    border: 0.13rem solid #b0e7e7;
+    border-radius: 0.25rem;
+    display: flex;
+    width: 3rem;
+    height: 1.5rem;
+    color: black;
+    font-size: 80%;
+    margin: 1rem 0rem;
 }
 
 .input-label {
@@ -437,8 +476,16 @@ code {
 
 .input-box:hover,
 .input-box:focus {
-    transition-duration: 1s;
-    background-color: transparent;
+    transition-duration: 0.75s;
+    background-color: whitesmoke;
+    border-color: #7b1616;
+}
+
+.input-box-quantity:hover,
+.input-box-quantity:focus {
+    transition-duration: 0.75s;
+    background-color: whitesmoke;
+    border-color: #7b1616;
 }
 
 
@@ -515,8 +562,6 @@ code {
         flex-basis: 50em;
         flex-flow: 4;
         max-height: auto;
-
-
     }
 
     .product-details {
@@ -674,6 +719,17 @@ img.imagelink-product {
     transform: scale(101%);
 }
 
+.product-section-title {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.product-container-item {
+    max-width: 20rem;
+    padding: 0.75rem;
+    flex: 1;
+}
+
 /* CHECKOUT (COFFEE SHOP VARIATION) */
 .seperatetop {
     margin-top: 11em;
@@ -807,7 +863,6 @@ formblock {
     float: left;
     flex-shrink: 1;
     flex-grow: 1;
-
 }
 
 .product-img img {
@@ -960,9 +1015,9 @@ select:focus-within {
 }
 
 .form-label {
-    color: #7b1616;
-    padding-right: 1em;
-
+    color: black;
+    padding-right: 25%;
+    padding-left: 10%;
 }
 
 hr {
