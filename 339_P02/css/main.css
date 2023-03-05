@@ -315,9 +315,6 @@ text-align-last: center;
     border-color: #7b1616;
 }
 
-
-
-
 .submit:hover,
 .submit:focus {
     background-color: whitesmoke;
@@ -328,6 +325,10 @@ text-align-last: center;
     border-color: #7b1616;
     transform: scale(103%);
 
+}
+
+textarea {
+    font-family: sans-serif;
 }
 
 .center {
@@ -728,9 +729,162 @@ img.imagelink-product {
     max-width: 20rem;
     padding: 0.75rem;
     flex: 1;
+    font-size: 85%;
 }
 
 /* CHECKOUT (COFFEE SHOP VARIATION) */
+
+.checkoutContainer {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}
+
+.checkoutItem {
+ flex-grow:1;
+}
+
+.checkoutBg {
+    background-color:#7b1616;
+}
+
+.shipping {
+    padding-left: 2rem;
+}
+
+.shippingInput {
+display: block;
+margin: auto;
+margin-bottom: 1rem;
+}
+
+.creditCard {
+    padding: 1rem;
+    background-color: #7b1616;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #7b1616;
+    border-width: 0.2rem;
+}
+
+.applePay {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2rem;
+}
+
+.paypal {
+    padding: 1rem;
+    background-color: #b0e7e7;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #b0e7e7;
+    border-width: 0.2rem;
+}
+
+.creditCard:hover, .creditCardBtn:focus {
+    transition-duration: 0.5s;
+    border-color: white;
+}
+
+.applePay:hover, .applepay:focus {
+    transition-duration: 0.5s;
+    border-color: white;
+}
+
+.paypal:hover, .paypal:focus {
+    transition-duration: 0.5s;
+    border-color: white;
+}
+
+.align {
+margin-left: 20%;
+}
+
+.subHeader {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.continueBtn {
+    padding: 1rem;
+    background-color: #b0e7e7;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem; 
+    border-style: solid;
+    border-color: #b0e7e7;
+    border-width: 0.2rem;
+}
+
+.continueBtn:hover, .continueBtn:focus {
+    transition-duration: 0.5s;
+    color: #7b1616;
+    border-color: #7b1616;
+}
+
+.logoSpacer {
+    margin: 12rem;
+}
+
+.imgContainer {
+display: flex;
+background-color: whitesmoke;
+margin: 2rem;
+border-radius: 1.5rem;
+width: 70%;
+}
+
+.checkoutImg {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.cartTitle {
+    color: white;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.orderBtn {
+    font-family: sans-serif;
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none
+}
+
+.orderBtn:hover, .orderBtn:focus {
+    transition-duration: 0.5s;
+    background-color: #b0e7e7;
+}
+
+.orderText {
+    color: white;
+    text-align: right;
+    margin-right: 25%;
+}
+
+
+
+
+
+
 .seperatetop {
     margin-top: 11em;
 }
@@ -785,11 +939,10 @@ img.imagelink-productbrief {
 }
 
 .product-brief-count {
-    font-size: 2em;
-    margin-top: 1.5em;
-    margin-left: 0.8em;
-
-
+    font-size: 1.5rem;
+    margin-right: 25%;
+    margin-top: -1rem;
+    text-align: right;
 }
 
 
@@ -1031,7 +1184,6 @@ hr {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    margin-top: 5rem;
 }
 
 .footer-item {
@@ -1051,7 +1203,10 @@ hr {
     margin: 1rem;
 }
 
-/* temporary logo for now? */
+.footerSpacer {
+    margin-top: 5rem;
+}
+
 .logo-link-footer {
     width: 4rem;
     height: 4rem;

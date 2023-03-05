@@ -10,21 +10,85 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <a class=logo-link href="index.html">Royal Candies</a>
-            <div class=nav-decoration>
-                <a class=nav-link href="product_listing.html">products</a>
-                <a class=nav-link href="index.html#updates">updates</a>
-                <a class=nav-link href="checkout.html">checkout</a>
-            </div>
-        </nav>
-    </header>
 
-    <div class="sidePadding">
+        </nav>
+    </header> -->
+
+    <!-- <div class="sidePadding"> -->
+
+
+
+
+    <div class = checkoutContainer>
+        <div class = "checkoutItem shipping">
+            <div class = spacer></div>
+            <a class=logo-link href="index.html">Royal Candies</a>
+            <div class = logoSpacer></div>
+
+            <h4 class = "align subHeader">Payment</h4>
+        <div class = align>
+            <a class=creditCard href="#">Credit Card</a>
+            <a class=applePay href="#">Apple Pay</a>
+            <a class=paypal href="#">Paypal</a>
+        </div>
+            <div class = spacer></div>
+            <form>
+                <h4 class = "align subHeader">Shipping Information</h4>
+                <label class="input-label align" for="shippingfullname">full name</label>
+                <input class="input-box shippingInput" id="shippingfullname" name="shippingfullname">
+                <label class="input-label  align" for="shippingemail">email</label>
+                <input class="input-box shippingInput" id="shippingemail" name="shippingemail">
+                <label class="input-label  align" for="shippingaddress">shipping address</label>
+                <input class="input-box shippingInput" id="shippingaddress" name="shippingaddress">
+                <label class="input-label  align" for="city">city</label>
+                <input class="input-box shippingInput" id="city" name="city">
+                <label class="input-label  align" for="postalcode">postal code</label>
+                <input class="input-box shippingInput" id="postalcode" name="postalcode">
+            </form>
+            <div class = spacer></div>
+            <a class= "continueBtn align" href="product_listing.html">Continue Shopping?</a>
+            <div class = spacer></div>
+
+        </div>
+
+        <div class = "checkoutItem checkoutBg">
+            <h1 class = cartTitle>cart</h1>
+            <div class = imgContainer>
+            <img class=checkoutImg src="img/rainbowLollipops.jpg" alt="A hand holding a bunch of colourful lollipops">
+            <div class=product-brief-block>
+                <h4 class=product-brief-title>Rainbow Lollipop</h4>
+                <p class=product-brief-price>$4.00</p>
+                <p class=product-brief-count> <b> - 1 + </b>
+                    <p>
+            </div>
+        </div>
+
+        <div class = imgContainer>
+            <img class=checkoutImg src="img/candyCaneJar.jpg" alt="A person holding out a clear jar of candy canes">
+            <div class=product-brief-block>
+                <h4 class=product-brief-title>Candy Cane</h4>
+                <p class=product-brief-price>$3.50</p>
+                <p class=product-brief-count> <b> - 1 + </b>
+                    <p>
+            </div>
+        </div>
+
+            <p class = orderText>Subtotal: $7.50</p>
+            <p  class = orderText>Shipping: Free</p>
+            <h4 class = orderText>Total: $7.50</h4>
+        <a class="orderBtn" href=index.html>PLACE ORDER</a>
+        </div>
+
+    </div>
+
+
 
         <!--Price summary section-->
-        <section class=container>
+
+        <!-- <section class=container>
             <div class="product-brief">
                 <div class=product-brief-block>
                     <a href="#imagelink"><img class=imagelink-productbrief src="img/rainbowLollipops.jpg" alt="A hand holding a bunch of colourful lollipops"></a>
@@ -61,11 +125,11 @@
                 <h4>Shipping: Free</h4>
                 <h3>Total: $7.50</h3>
             </div>
-        <!-- </section> -->
+        </section> -->
 
 
         <!-- Payment section(credit card info & shipping)-->
-        <section class=seperatetop></section>
+        <!-- <section class=seperatetop></section>
 
         <section class="container">
             <section class="listing-item-bg">
@@ -107,7 +171,7 @@
             </section>
 
             <input class=" shippingaligntext submit" type="submit" value="ORDER">
-        </section>
+        </section> -->
 
 
     </div>
