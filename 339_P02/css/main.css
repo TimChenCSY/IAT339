@@ -381,7 +381,7 @@ h3 {
 
 h4 {
     color: black;
-     max-width: 50rem;
+    max-width: 50rem;
     margin-top: -0.01rem;
     padding-left: 0.25rem;
 }
@@ -1106,9 +1106,7 @@ select:focus-within {
 
 /* ----------review section part--------- */
 
-.checkout-price{
-    float:right;
-}
+
 
 
 .comment-section {
