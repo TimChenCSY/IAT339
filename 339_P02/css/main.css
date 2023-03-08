@@ -600,7 +600,7 @@ code {
         max-width: 100%;
         position: sticky;
         top: 20%;
-
+        margin-top:10%;
     }
 
     .product-brief {
