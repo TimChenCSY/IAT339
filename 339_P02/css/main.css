@@ -762,7 +762,8 @@ img.imagelink-product {
 }
 
 .creditCard {
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0.25rem 0;
     background-color: #7b1616;
     color: white;
     text-decoration: none;
@@ -770,10 +771,15 @@ img.imagelink-product {
     border-style: solid;
     border-color: #7b1616;
     border-width: 0.2rem;
+    width: 6rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .applePay {
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0.25rem 0;
     background-color: black;
     color: white;
     text-decoration: none;
@@ -781,17 +787,26 @@ img.imagelink-product {
     border-style: solid;
     border-color: black;
     border-width: 0.2rem;
+    width: 6rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .paypal {
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0.25rem 0;
     background-color: royalblue;
     color: white;
     text-decoration: none;
     border-radius: 0.5rem;
     border-style: solid;
-    border-color: royalblue7;
+    border-color: royalblue;
     border-width: 0.2rem;
+    width: 6rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .creditCard:hover,
@@ -840,7 +855,7 @@ img.imagelink-product {
 }
 
 .logoSpacer {
-    margin: 12rem;
+    margin: 14rem;
 }
 
 .imgContainer {
@@ -848,7 +863,7 @@ img.imagelink-product {
     background-color: whitesmoke;
     margin: 2rem;
     border-radius: 1.5rem;
-    width: 70%;
+    width: 80%;
 }
 
 .checkoutImg {
@@ -872,7 +887,7 @@ img.imagelink-product {
 
     padding: 1rem;
     border-radius: 0.5rem;
-    border: none margin-top: 2rem;
+    border: none; margin-top: 2rem;
     background-color: #b0e7e7;
     border-style: solid;
     border-width: 0.2rem;
@@ -884,13 +899,12 @@ img.imagelink-product {
     box-sizing: border-box;
     transition-duration: 0.2s;
     text-align-last: center;
-
 }
 
 .orderBtn:hover,
 .orderBtn:focus {
     transition-duration: 0.5s;
-    background-color: #b0e7e7;
+    background-color: white;
     color: #7b1616
 }
 
@@ -899,8 +913,6 @@ img.imagelink-product {
     text-align: right;
     margin-right: 25%;
 }
-
-
 
 
 
