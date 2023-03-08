@@ -13,161 +13,164 @@
 
 <body>
     <header>
-        <nav> 
-            <a class = logo-link href="index.html">Royal Candies</a>
-            <div class = nav-decoration>
-                <a class = nav-link href="product_listing.html">products</a>
-                <a class = nav-link href="index.html#updates">updates</a>
-                <a class = nav-link href="checkout.html">checkout</a>
+        <nav>
+            <a class=logo-link href="index.html">Royal Candies</a>
+            <div class=nav-decoration>
+                <a class=nav-link href="product_listing.html">products</a>
+                <a class=nav-link href="index.html#updates">updates</a>
+                <a class=nav-link href="checkout.html">checkout</a>
             </div>
         </nav>
     </header>
 
-    <div class = "sidePadding">
+    <div class="sidePadding">
 
 
-    <section class="product-container">
-        <div class="product-img">
-            <img src="img/candyCaneJarPlainBg.jpg" alt="A ceramic mug of red and white candy canes and a plain pink background">
-            <img src="img/candyCaneJar.jpg" alt="A person holding out a clear jar of candy canes">
-        </div>
-        <div class="product-details">
-            <h1>Candy Cane</h1>
-            <h3>Price : $3.50</h3>
-            <p>Product Description </p>
-            <ul>
-                <li>Holiday Special</li>
-                <li>Refreshing</li>
-                <li>Made with 100% Natural Ingredients</li>
-                <li>Try the holiday peppermint flavour!</li>
-            </ul>
-
-            <div class="product-selection">
-                <select class = input-box>
-                    <option>Classic</option>
-                    <option>Fruit Cereal</option>
-                    <option>Chocolate peppermint</option>
-                    <option>French Vanilla</option>
-                    <option>Cranberry</option>
-                </select>
-                <div class="product-quantity">
-                    <label class="input-label" for="quantity">Quantity:</label>
-                    <input class="input-box-quantity" ; type="number" id="quantity" name="quantity">
-                </div>
+        <section class="product-container">
+            <div class="product-img">
+                <img src="img/candyCaneJarPlainBg.jpg" alt="A ceramic mug of red and white candy canes and a plain pink background">
+                <img src="img/candyCaneJar.jpg" alt="A person holding out a clear jar of candy canes">
             </div>
-            <button class="submit addtocart">Add to Cart</button>
-        </div>
-    </section>
+            <div class="product-details">
+                <h1>Candy Cane</h1>
+                <h3>Price : $3.50</h3>
+                <p>Product Description </p>
+                <ul>
+                    <li>Holiday Special</li>
+                    <li>Refreshing</li>
+                    <li>Made with 100% Natural Ingredients</li>
+                    <li>Try the holiday peppermint flavour!</li>
+                </ul>
 
-    <div class = productDetail-spacer></div>
-
-
-    <section class="comment-section">
-        <div class="section-header">
-            <h2>reviews</h2>
-
-            <div class="summary-rating">
-                <span class="rating">4.5</span>
-                <span class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half"></i>
-                </span>
-            </div>
-        </div>
-        <hr>
-        <div class="review-list">
-            <div class="review">
-                <div class="user-icon">
-                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="User Icon">
+                <div class="product-selection">
+                    <select class=input-box>
+                        <option>Classic</option>
+                        <option>Fruit Cereal</option>
+                        <option>Chocolate peppermint</option>
+                        <option>French Vanilla</option>
+                        <option>Cranberry</option>
+                    </select>
+                    <div class="product-quantity">
+                        <label class="input-label" for="quantity">Quantity:</label>
+                        <input class="input-box-quantity" ; type="number" id="quantity" name="quantity">
+                    </div>
                 </div>
-                <div class="review-details">
-                    <h3>Great product</h3>
-                    <div class="rating">
-                        <span class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                    </div>
-                    <p>Love the peppermint flavor! Sooooo refreshing! Great with hot chocolate!.</p>
-                </div>
-            </div>
-            <div class="review">
-                <div class="user-icon">
-                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="User Icon">
-                </div>
-                <div class="review-details">
-                    <h3>Not as good as I expected</h3>
-                    <div class="rating">
-                        <span class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <!--                            <i class="fa fa-star-half"></i>-->
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </span>
-                    </div>
-                    <p>The cranberry flavour does not taste as good as others, the fruit cereal one is still my fav.</p>
-                </div>
-            </div>
-        </div>
-        <div id="leave-review">
-            <details class=detail>
-                <summary>Leave a review</summary>
-                <form>
-                    <div class="form-bg">
-                        <label class="form-label" for="name">Name:</label>
-                        <input class=input-box type="text" id="name" placeholder="Enter your name" name="name" required>
-
-                    </div>
-
-                    <div class="form-bg">
-                        <label class="form-label" for="rating">Rating:</label>
-                        <select class = input-box id="rating" name="rating" required>
-                            <option value="" selected disabled>Select a rating</option>
-                            <option value="5">5 stars</option>
-                            <option value="4">4 stars</option>
-                            <option value="3">3 stars</option>
-                            <option value="2">2 stars</option>
-                            <option value="1">1 star</option>
-                        </select>
-                    </div>
-                    <div class="form-bg">
-                        <label class="form-label" for="review">Review:</label>
-                        <textarea class=input-box id="review" placeholder="Write your review" name="review" rows="5" required></textarea>
-                        <!--                        https://www.w3schools.com/tags/tag_textarea.asp-->
-                    </div>
-                    <div class="form-bg">
-                        <button class=submitreview type="submit">Submit Review</button>
-                    </div>
+                <form method="GET" action="/checkout.html">
+                    <button class="submit addtocart">Add to Cart</button>
                 </form>
-            </details>
-        </div>
-    </section>
+            </div>
+        </section>
+
+        <div class=productDetail-spacer></div>
+
+
+        <section class="comment-section">
+            <div class="section-header">
+                <h2>reviews</h2>
+
+                <div class="summary-rating">
+                    <span class="rating">4.5</span>
+                    <span class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="review-list">
+                <div class="review">
+                    <div class="user-icon">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="User Icon">
+                    </div>
+                    <div class="review-details">
+                        <h3>Great product</h3>
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p>Love the peppermint flavor! Sooooo refreshing! Great with hot chocolate!.</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="user-icon">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="User Icon">
+                    </div>
+                    <div class="review-details">
+                        <h3>Not as good as I expected</h3>
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <!--                            <i class="fa fa-star-half"></i>-->
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                        </div>
+                        <p>The cranberry flavour does not taste as good as others, the fruit cereal one is still my fav.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="leave-review">
+                <details class=detail>
+                    <summary>Leave a review</summary>
+                    <form>
+                        <div class="form-bg">
+                            <label class="form-label" for="name">Name:</label>
+                            <input class=input-box type="text" id="name" placeholder="Enter your name" name="name" required>
+
+                        </div>
+
+                        <div class="form-bg">
+                            <label class="form-label" for="rating">Rating:</label>
+                            <select class=input-box id="rating" name="rating" required>
+                                <option value="" selected disabled>Select a rating</option>
+                                <option value="5">5 stars</option>
+                                <option value="4">4 stars</option>
+                                <option value="3">3 stars</option>
+                                <option value="2">2 stars</option>
+                                <option value="1">1 star</option>
+                            </select>
+                        </div>
+                        <div class="form-bg">
+                            <label class="form-label" for="review">Review:</label>
+                            <textarea class=input-box id="review" placeholder="Write your review" name="review" rows="5" required></textarea>
+                            <!--                        https://www.w3schools.com/tags/tag_textarea.asp-->
+                        </div>
+                        <div class="form-bg">
+                            <button class=submitreview type="submit">Submit Review</button>
+                        </div>
+                    </form>
+                </details>
+            </div>
+        </section>
 
     </div>
 
-    <div class = footerSpacer></div>
+    <div class=footerSpacer></div>
     <section class=footer-container>
         <a class="logo-link-footer footer-item" href="index.html">Royal Candies</a>
         <h3 class=footer-item>about our company</h3>
-        <p class = footer-item>Royal Candies is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>        <div class=footer-item>
-            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class = footer-contactinfo src = "img/social-media-icons/facebook.png" alt = "Facebook icons created by Pixel perfect - Flaticon"></a>
-            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class = footer-contactinfo src = "img/social-media-icons/twitter.png" alt = "Twitter icons created by Pixel perfect - Flaticon"></a>
-            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class = footer-contactinfo src = "img/social-media-icons/instagram.png" alt = "Instagram icons created by Pixel perfect - Flaticon"></a>
+        <p class=footer-item>Royal Candies is a small local business dedicated to crafting high quality, delightful sweets. We encourage making everyday a special occasion by providing our customers with a great selection of products that can form the basis for a perfect gift to share with loved ones.</p>
+        <div class=footer-item>
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook"><img class=footer-contactinfo src="img/social-media-icons/facebook.png" alt="Facebook icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/twitter" title="twitter"><img class=footer-contactinfo src="img/social-media-icons/twitter.png" alt="Twitter icons created by Pixel perfect - Flaticon"></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram"><img class=footer-contactinfo src="img/social-media-icons/instagram.png" alt="Instagram icons created by Pixel perfect - Flaticon"></a>
         </div>
-        <div class = spacer></div>
-        <h3 class = footer-item>resources</h3>
-        <a class = "footer-item text-link" href="styleguide.html">Brand Style Guide</a>
-        <a class = "footer-item text-link" href="styleguide.html#citations">Citations</a>
-        <a class = "footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
-        <div class = spacer></div>
+        <div class=spacer></div>
+        <h3 class=footer-item>resources</h3>
+        <a class="footer-item text-link" href="styleguide.html">Brand Style Guide</a>
+        <a class="footer-item text-link" href="styleguide.html#citations">Citations</a>
+        <a class="footer-item text-link" href="https://github.com/jc8880/IAT339.git">Git Repository</a>
+        <div class=spacer></div>
     </section>
 </body>
 

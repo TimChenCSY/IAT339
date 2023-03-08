@@ -1099,8 +1099,12 @@ select:focus-within {
 }
 
 .addtocart {
+    
     font-size: 1.5em;
     align-items: flex-end;
+}
+.addtocart:focus {
+   background-color: #b0e7e7;
 }
 
 
