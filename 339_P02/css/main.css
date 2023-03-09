@@ -26,7 +26,7 @@ body {
 .noWrapRadio > span {
     /* Code referenced from: https://stackoverflow.com/questions/6714414/keep-radio-buttons-with-their-labels-on-line-breaks */
     white-space: nowrap;
-    font-weight:600;
+    font-weight: 600;
     font-size: small;
 }
 
@@ -330,7 +330,7 @@ img.image-index {
     border-width: 0.2rem;
     border-style: solid;
     border-color: #7b1616;
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
 
 }
 
@@ -555,6 +555,11 @@ code {
         max-width: 100%;
     }
 
+    .checkoutBg {
+        padding-left: 18%;
+
+    }
+
     .product-container {
 
         flex-direction: column-reverse;
@@ -569,7 +574,7 @@ code {
     .product-img {
         max-width: 100%;
         flex-basis: 50em;
-        }
+    }
 
     .product-details {
         max-width: 100%;
@@ -592,6 +597,24 @@ code {
         text-align: right;
     }
 
+    .checkoutbutton {
+        max-width: 100%;
+
+    }
+
+    .checkoutoptions {
+        flex-direction: column;
+
+    }
+
+    .orderBtn {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+
+
+    }
+
     /*end of @media screen and (max-width:60rem) narrow actives
     ###################################################################################################################################################################
     
@@ -604,7 +627,7 @@ code {
         max-width: 100%;
         position: sticky;
         top: 20%;
-        margin-top:10%;
+        margin-top: 10%;
     }
 
     .product-brief {
@@ -622,6 +645,11 @@ code {
         flex-grow: 0.5;
 
     }
+
+    .checkoutbutton {
+        max-width: 30%;
+    }
+
 }
 
 /* PRODUCT LISTING (COFFEE SHOP VARIATION) */
@@ -748,10 +776,13 @@ img.imagelink-product {
 
 .checkoutItem {
     flex-grow: 1;
+
 }
 
 .checkoutBg {
     background-color: #7b1616;
+
+
 }
 
 .shipping {
@@ -764,52 +795,56 @@ img.imagelink-product {
     margin-bottom: 1rem;
 }
 
-.creditCard {
+.checkoutoptions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkoutbutton {
+    display: flex;
     padding: 0.75rem;
-    margin: 0.25rem 0;
-    background-color: #7b1616;
+    margin: 0.5rem 0.1rem;
     color: white;
     text-decoration: none;
     border-radius: 0.5rem;
     border-style: solid;
-    border-color: #7b1616;
     border-width: 0.2rem;
-    width: 6rem;
-    display: inline-flex;
+    min-width: 7rem;
+    max-width: 100%;
+    flex-basis: 33%;
+    flex: 1;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+
+}
+
+
+.creditCard {
+
+    background-color: #7b1616;
+
+    border-color: #7b1616;
+
 }
 
 .applePay {
-    padding: 0.75rem;
-    margin: 0.25rem 0;
+
     background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    border-style: solid;
+
     border-color: black;
-    border-width: 0.2rem;
-    width: 6rem;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+
 }
 
 .paypal {
-    padding: 0.75rem;
-    margin: 0.25rem 0;
+
     background-color: royalblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    border-style: solid;
+
     border-color: royalblue;
-    border-width: 0.2rem;
-    width: 6rem;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+
 }
 
 .creditCard:hover,
@@ -832,6 +867,7 @@ img.imagelink-product {
 
 .align {
     margin-left: 20%;
+    margin-right: 19%;
 }
 
 .subHeader {
@@ -890,7 +926,8 @@ img.imagelink-product {
 
     padding: 1rem;
     border-radius: 0.5rem;
-    border: none; margin-top: 2rem;
+    border: none;
+    margin-top: 2rem;
     background-color: #b0e7e7;
     border-style: solid;
     border-width: 0.2rem;
@@ -1110,12 +1147,13 @@ select:focus-within {
 }
 
 .addtocart {
-    
+
     font-size: 1.5em;
     align-items: flex-end;
 }
+
 .addtocart:focus {
-   background-color: #b0e7e7;
+    background-color: #b0e7e7;
 }
 
 
