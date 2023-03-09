@@ -75,7 +75,7 @@
 
                 <div class="rendered">
                     <h4>rendered element:</h4>
-                    <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial & https://www.educba.com/html-reset-button/-->
+                    <!--Code retrieved from "01_-_HTML_Basics_-_Completed" in class tutorial-->
                     <form>
                         <input class="submit" type="submit" value="SUBMIT">
                         <input class="submit" type="reset" value="RESET">
@@ -113,7 +113,7 @@
 
                 <div class="rendered">
                     <h4>rendered element:</h4>
-                    <!--Code retrieved from https://www.w3schools.com/tags/att_input_type_radio.asp & https://www.w3schools.com/tags/tag_label.asp-->
+                    <!--Code retrieved from https://www.w3schools.com/tags/att_input_type_radio.asp-->
                     <input type="radio" id="ChoiceA" name="groupA" value="A">
                     <label for="ChoiceA">A</label>
                     <input type="radio" id="ChoiceB" name="groupA" value="B">
@@ -154,7 +154,7 @@
                 <p>CSS selector: .h1, .h2, .h3, .h4</p>
 
                 <p>Sample code:</p>
-                <code>&lt;h1>Level 1&lt;/h1&gt;
+                <code>&lt;h1&gt;Level 1&lt;/h1&gt;
                     &lt;h2&gt;Level 2&lt;/h2&gt;
                     &lt;h3&gt;Level 3&lt;/h3&gt;
                     &lt;h4&gt;Level 4&lt;/h4&gt;
@@ -255,16 +255,17 @@
                     <h4>rendered element:</h4>
                     <div class=product-list>
                         <div class="product-card">
-                            <a href="#imagelink"><img class=imagelink-product src="https://www.designandpaper.com/wp-content/uploads/2020/01/c9ca9185437477.5d7b91b26dc1e-1536x1024.jpg"></a>
-                            <h4 class=product-title>Candy Cane (X2)</h4>
+                            <a href="#imagelink"><img class=imagelink-product src="img/candyCaneJar.jpg" alt="A person holding out a clear jar of candy canes"></a>
                             <p class=product-price>$3.50</p>
                             <div class="product-overlay">
-                                <p class="product-text">Holiday Special</p>
+                                <p class="product-text">Holiday Special:</p>
                                 <p class="product-text">Refreshing</p>
                                 <p class="product-text">Peppermint</p>
                             </div>
-
                         </div>
+                    </div>
+
+                </div>
             </section>
 
             <section class="element, item">
@@ -274,7 +275,7 @@
 
                 <p>Sample code:</p>
                 <code>&lt;form&gt;
-                    &lt;h3>Payment Information&lt;/h3&gt;
+                    &lt;h3&gt;Payment Information&lt;/h3&gt;
                     &lt;input type = "radio" id = "Credit Card" name = "payment" value = "Credit Card"&gt;
                     &lt;label for = "Credit Card"&gt;Credit Card&lt;/label&gt;
                     &lt;input type = "radio" id = "Apple Pay" name = "payment" value = "Apple Pay"&gt;
@@ -295,25 +296,28 @@
                 <div class="rendered">
                     <h4>rendered element:</h4>
                     <!--used earlier code in this template to influence implementation-->
-                    <form>
-                        <h3>Payment Information</h3>
-                        <input type="radio" id="CreditCard" name="payment" value="Credit Card">
-                        <label for="CreditCard">Credit Card</label>
-                        <input type="radio" id="ApplePay" name="payment" value="Apple Pay">
-                        <label for="ApplePay">Apple Pay</label>
-                        <input type="radio" id="Paypal" name="payment" value="Paypal">
-                        <label for="Paypal">Paypal</label><br>
-
-                        <label class="input-label">card number</label>
-                        <input class="input-box">
-                        <label class="input-label">expiration date (mm/yy)</label>
-                        <input class="input-box">
-                        <label class="input-label">cvv number</label>
-                        <input class="input-box">
-                        <label class="input-label">name on card</label>
-                        <input class="input-box">
-                        <input class="submit" type="submit" value="PLACE YOUR ORDER">
-                    </form>
+                    <div class="checkoutItem shipping">            
+                        <div class=align>
+                            <a class=creditCard href="#">Credit Card</a>
+                            <a class=applePay href="#">Apple Pay</a>
+                            <a class=paypal href="#">Paypal</a>
+                        </div>
+                        <form>
+                            <h4 class="align subHeader">Shipping Information</h4>
+                            <label class="input-label align" for="shippingfullname">full name</label>
+                            <input class="input-box shippingInput" id="shippingfullname" name="shippingfullname">
+                            <label class="input-label  align" for="shippingemail">email</label>
+                            <input class="input-box shippingInput" id="shippingemail" name="shippingemail">
+                            <label class="input-label  align" for="shippingaddress">shipping address</label>
+                            <input class="input-box shippingInput" id="shippingaddress" name="shippingaddress">
+                            <label class="input-label  align" for="city">city</label>
+                            <input class="input-box shippingInput" id="city" name="city">
+                            <label class="input-label  align" for="postalcode">postal code</label>
+                            <input class="input-box shippingInput" id="postalcode" name="postalcode">
+                        </form>
+                        <div class=spacer></div>
+                        <a class="continueBtn align" href="product_listing.html">Continue Shopping?</a>
+                    </div>
                 </div>
             </section>
 
@@ -340,7 +344,7 @@
                     &lt;/div&gt;
                     &lt;div class="product-brief"&gt;
                     &lt;div class=product-brief-block&gt;
-                    &lt;a href="#imagelink">&lt;img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"&gt;&lt;/a&gt;
+                    &lt;a href="#imagelink"&gt;&lt;img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"&gt;&lt;/a&gt;
                     &lt;/div&gt;
                     &lt;div class=product-brief-block&gt;
                     &lt;h4 class=product-brief-title&gt;Candy Cane (X2)&lt;/h4&gt;
@@ -354,47 +358,40 @@
               
                     &lt;/div&gt;
                     &lt;div class=shippingaligntext&gt;
-                    &lt;h4>Subtotal: 7.50$&lt;/h4&gt;
-                    &lt;h4>Shipping: Free&lt;/h4&gt;
-                    &lt;h3>Total: $7.50&lt;/h3v
+                    &lt;h4&gt;Subtotal: 7.50$&lt;/h4&gt;
+                    &lt;h4&gt;Shipping: Free&lt;/h4&gt;
+                    &lt;h3&gt;Total: $7.50&lt;/h3v
                     &lt;/div&gt;</code>
 
                 <div class="rendered">
                     <h4>rendered element:</h4>
-                    <div class="product-brief">
-                        <div class=product-brief-block>
-                            <a href="#imagelink"><img class=imagelink-productbrief src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ee21bc50628037.58d505da20a13.jpg" alt="Image example"></a>
+                    <div class="checkoutItem checkoutBg">
+                        <h1 class=cartTitle>cart</h1>
+                        <div class=imgContainer>
+                            <img class=checkoutImg src="img/rainbowLollipops.jpg" alt="A hand holding a bunch of colourful lollipops">
+                            <div class=product-brief-block>
+                                <h4 class=product-brief-title>Rainbow Lollipop</h4>
+                                <p class=product-brief-price>$4.00</p>
+                                <p class=product-brief-count> <b> - 1 + </b>
+                                <p>
+                            </div>
                         </div>
-                        <div class=product-brief-block>
-                            <h4 class=product-brief-title>Rainbow Lollipop</h4>
-                            <p class=product-brief-price>$4.00</p>
+            
+                        <div class=imgContainer>
+                            <img class=checkoutImg src="img/candyCaneJar.jpg" alt="A person holding out a clear jar of candy canes">
+                            <div class=product-brief-block>
+                                <h4 class=product-brief-title>Candy Cane</h4>
+                                <p class=product-brief-price>$3.50</p>
+                                <p class=product-brief-count> <b> - 1 + </b>
+                                <p>
+                            </div>
                         </div>
-                  
-                        <div class=product-brief-block>
-                            <p class=product-brief-count> <b> - 1 + </b>
-                            <p>
+                        <div class=checkout-price>
+                            <p class=orderText>Subtotal: $7.50</p>
+                            <p class=orderText>Shipping: Free</p>
+                            <h4 class=orderText>Total: $7.50</h4>
+                            <a class=" orderBtn" href=index.html>PLACE ORDER</a>
                         </div>
-                  
-                    </div>
-                    <div class="product-brief">
-                        <div class=product-brief-block>
-                            <a href="#imagelink"><img class=imagelink-productbrief src="https://www.designandpaper.com/wp-content/uploads/2020/01/0601d584151819.5d53605bc9db5-1536x1024.jpg" alt="Image example"></a>
-                        </div>
-                        <div class=product-brief-block>
-                            <h4 class=product-brief-title>Candy Cane (X2)</h4>
-                            <p class=product-brief-price>$3.50</p>
-                        </div>
-                  
-                        <div class=product-brief-block>
-                            <p class=product-brief-count> <b> - 1 + </b>
-                            <p>
-                        </div>
-                  
-                    </div>
-                    <div class=shippingaligntext>
-                        <h4>Subtotal: 7.50$</h4>
-                        <h4>Shipping: Free</h4>
-                        <h3>Total: $7.50</h3>
                     </div>
                 </div>
             </section>
@@ -442,7 +439,6 @@
 
             <section class="element, item">
                 <h3>Colour Palettes</h3>
-                <!--This code retrieved from https://www.w3schools.com/html/html_colors.asp-->
                 <h4>Some colour palette options that were considered include:</h4>
                 <p>A classic, refreshing palette synonymous with our line of products:</p>
                 <p style="background-color:#EF9FC9; padding: 1rem;">#EF9FC9</p>
@@ -479,10 +475,13 @@
     <section id="citations">
         <h2>citations</h2>
 
+        <h3>Brand Font</h3>
         <ul>
-            <!-- Brand font -->
             <li>Masharov, Denis. Designer. 2011. <strong>Poiret One [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace">https://fonts.google.com/specimen/Poiret+One/tester?category=Sans+Serif,Display,Handwriting,Monospace</a>.</li>
-            <!-- Images used in style guide & website -->
+        </ul>
+
+            <h3>Images</h3>
+        <ul>
             <li>Pixel Perfect. N.D. <strong>Icon Pack: Social [Image]</strong>. Retrieved from <a class="text-link" href="https://www.flaticon.com/packs/social-16">https://www.flaticon.com/packs/social-16</a></li>
             <li>freepik.com. N.D. <strong>Vintage Poster [Image]</strong>. Retrieved from <a class="text-link" href="https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm">https://www.freepik.com/premium-vector/pattern-with-red-white-vertical-lines-wallpaper-vector-illustration_32830358.htm</a></li>
             <li>istockphoto.com. N.D. <strong>Stripes [Image]</strong>. Retrieved from <a class="text-link" href="https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995">https://www.istockphoto.com/vector/vintage-candy-shop-collection-of-tin-signs-gm1167639486-322089995</a></li>
@@ -494,6 +493,21 @@
             <li>Vaitkevich, Nataliya. 2020. <strong>Pink Background Candy Cane Jar [Image]</strong>. Retrieved from <a class="text-link" href="https://www.pexels.com/photo/candy-canes-in-white-ceramic-mug-5868947/">https://www.pexels.com/photo/candy-canes-in-white-ceramic-mug-5868947/</a></li>
             <li>Chea, Somben. 2018. <strong>Blue Background & Lollipop [Image]</strong>. Retrieved from <a class="text-link" href="https://www.pexels.com/photo/blue-lollipop-1289363/">https://www.pexels.com/photo/blue-lollipop-1289363/</a></li>
             <li>katie, Rainbow. 2018. <strong>Hand of Coloured Lollipops [Image]</strong>. Retrieved from <a class="text-link" href="https://www.pexels.com/photo/a-person-holding-a-colorful-lollipops-8304567/">https://www.pexels.com/photo/a-person-holding-a-colorful-lollipops-8304567/</a></li>
+        </ul>
+
+            <h3>Code Resources</h3>
+        <ul> 
+            <li><a class="text-link" href="https://www.tutorialspoint.com/articles/index.php">https://www.tutorialspoint.com/articles/index.php</a></li>
+            <li><a class="text-link" href="https://www.w3schools.com/tags/att_input_type_radio.asp">https://www.w3schools.com/tags/att_input_type_radio.asp</a></li>
+            <li><a class="text-link" href="https://stackoverflow.com/questions/6714414/keep-radio-buttons-with-their-labels-on-line-breaks">https://stackoverflow.com/questions/6714414/keep-radio-buttons-with-their-labels-on-line-breaks</a></li>
+            <li><a class="text-link" href="https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit">https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit</a></li>
+            <li><a class="text-link" href="https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number">https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number</a></li>
+            <li><a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</a></li>
+            <li><a class="text-link" href="https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/">https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/</a></li>
+            <li><a class="text-link" href="https://www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=Add%20CSS%20Set%20the%20white-space%20property%20to%20%22pre-wrap%22.,Use%20the%20word-wrap%20property%20with%20the%20%22break-word%22%20value">https://www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=Add%20CSS%20Set%20the%20white-space%20property%20to%20%22pre-wrap%22.,Use%20the%20word-wrap%20property%20with%20the%20%22break-word%22%20value</a></li>
+            <li><a class="text-link" href="https://www.w3schools.com/css/css_form.asp">https://www.w3schools.com/css/css_form.asp</a></li>
+            <li><a class="text-link" href="https://www.w3schools.com/howto/howto_css_star_rating.asp--">https://www.w3schools.com/howto/howto_css_star_rating.asp--</a></li>
+            <li><a class="text-link" href="https://www.w3schools.com/tags/tag_textarea.asp--">https://www.w3schools.com/tags/tag_textarea.asp--</a></li>
         </ul>
 
     </section>
