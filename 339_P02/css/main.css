@@ -556,7 +556,7 @@ code {
     }
 
     .checkoutBg {
-        padding-left: 18%;
+        padding-left: 13%;
 
     }
 
@@ -611,8 +611,6 @@ code {
         display: flex;
         justify-content: center;
         max-width: 80%;
-
-
     }
 
     /*end of @media screen and (max-width:60rem) narrow actives
