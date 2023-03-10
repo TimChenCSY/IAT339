@@ -561,7 +561,6 @@ code {
 
     .checkoutBg {
         padding-left: 13%;
-
     }
 
     .product-container {
@@ -617,6 +616,13 @@ code {
         max-width: 80%;
     }
 
+    .checkoutContainer {
+        flex-direction:column;
+    }
+
+    .continueBtn {
+        width:60%;
+    }
     /*end of @media screen and (max-width:60rem) narrow actives
     ###################################################################################################################################################################
     
@@ -651,8 +657,19 @@ code {
     .checkoutbutton {
         max-width: 30%;
     }
+    .continueBtn {
+        max-width: 25%;
+    
+        
+    }
+    .checkoutContainer {
+        flex-direction: row;
+    }
 
 }
+
+
+
 
 /* PRODUCT LISTING (COFFEE SHOP VARIATION) */
 .product-list {
@@ -777,19 +794,19 @@ img.imagelink-product {
 .checkoutContainer {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+  
     justify-content: center;
 }
 
-.checkoutItem {
+.checkoutpayment {
     flex-grow: 1;
-
+    width: 50%;
 }
 
 .checkoutBg {
     background-color: #7b1616;
-
-
+    flex: 1;
+    order: 2;
 }
 
 .shipping {
@@ -891,6 +908,9 @@ img.imagelink-product {
     border-style: solid;
     border-color: #b0e7e7;
     border-width: 0.2rem;
+    margin: 0 19.5%;
+    flex: 1;
+   
 }
 
 .continueBtn:hover,
@@ -959,6 +979,11 @@ img.imagelink-product {
     color: white;
     text-align: right;
     margin-right: 25%;
+}
+
+.checkoutPayment {
+    flex: 1;
+    order: 1;
 }
 
 .seperatetop {
