@@ -371,13 +371,17 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    color: black;
+}
+
+.h2background {
     color: white;
     padding-left: 5rem;
     padding-top: 2.5rem;
     margin-top: 8rem;
     background-color: #7b1616;
     border-radius: 1rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -754,6 +758,11 @@ img.imagelink-product {
 .product-section-title {
     text-align: center;
     padding-top: 1rem;
+}
+
+.product-section-h2 {
+    text-align: center;
+    font-size: 1.25rem;
 }
 
 .product-container-item {
