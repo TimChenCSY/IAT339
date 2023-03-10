@@ -620,8 +620,9 @@ code {
         flex-direction:column;
     }
 
-    .continueBtn {
-        width:60%;
+    .orderbuttons{
+        flex-direction: column;
+        margin-right: 0;
     }
     /*end of @media screen and (max-width:60rem) narrow actives
     ###################################################################################################################################################################
@@ -657,13 +658,12 @@ code {
     .checkoutbutton {
         max-width: 30%;
     }
-    .continueBtn {
-        max-width: 25%;
     
-        
-    }
     .checkoutContainer {
         flex-direction: row;
+    }
+    .orderbuttons{
+         margin-right: 17%;
     }
 
 }
@@ -899,26 +899,7 @@ img.imagelink-product {
     margin-bottom: 2rem;
 }
 
-.continueBtn {
-    padding: 1rem;
-    background-color: #b0e7e7;
-    color: black;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    border-style: solid;
-    border-color: #b0e7e7;
-    border-width: 0.2rem;
-    margin: 0 19.5%;
-    flex: 1;
-   
-}
 
-.continueBtn:hover,
-.continueBtn:focus {
-    transition-duration: 0.5s;
-    color: #7b1616;
-    border-color: #7b1616;
-}
 
 .logoSpacer {
     margin: 14rem;
@@ -974,6 +955,17 @@ img.imagelink-product {
     background-color: white;
     color: #7b1616
 }
+
+.continueshopping{
+ min-width: 12rem;
+    background-color: whitesmoke;
+    
+}
+
+.placeorder{
+  min-width: 10rem;
+}
+
 
 .orderText {
     color: white;
@@ -1335,4 +1327,11 @@ hr {
 
 summary {
     padding: 1em;
+}
+
+.orderbuttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
